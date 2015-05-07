@@ -1,2 +1,4 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<p>Good to see you again, <%= @user.username %>!</p>
+
+<p><%= link_to 'Delete Profile', user_path(@user.id), method: :delete %></p>
+<p><%= link_to "Edit Profile", edit_user_path(@user.id) %></p>
