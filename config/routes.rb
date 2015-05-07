@@ -1,25 +1,32 @@
 Rails.application.routes.draw do
-  get 'comments/new'
 
-  get 'comments/edit'
 
-  get 'comments/show'
+  get '/login', to:'sessions#new'
 
-  get 'posts/new'
+  post '/login', to: 'sessions#create'
 
-  get 'posts/edit'
+  delete '/logout', to: 'sessions#delete'
 
-  get 'posts/show'
 
-  get 'posts/index'
 
-  get 'users/edit'
 
-  get 'users/index'
+  resources :users
 
-  get 'users/new'
+  # get '/users', to: 'users#index'
 
-  get 'users/show'
+  # post 'users', to: 'users#create'  #you will create def create in users_controll
+
+  # get '/users/new', to: 'users#new', as: 'new_user'
+
+  # get '/users/:id', to: 'users#show', as: 'user'
+
+  # get '/users/:id/edit', to: 'users#edit', as: 'edit_user'
+
+  # put '/users/:id/', to: 'users#update'
+
+  # patch '/users/:id', to: 'users#update'
+
+  # delete '/users/:id', to: 'users#delete' #you don't need to type as: 'destroy_user' because you always redirec to user_path (see in users_controll.erb) this method will be shown in show.html.erb
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -75,4 +82,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  root 'home#index'
+
+  # get '/home', to: 'home#home'
+
 end
