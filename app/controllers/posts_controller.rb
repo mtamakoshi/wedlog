@@ -21,7 +21,7 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   def create
   	@post = Post.new(post_params)
   	if @post.save
-  		redirect_to @post, notice: "Your post was created. Thank you for sharing."
+  		redirect_to posts_path, notice: "Your post was created. Thank you for sharing."
   	else
   		render :new
   	end

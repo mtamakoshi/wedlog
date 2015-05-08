@@ -7,13 +7,12 @@
 <% end %>
 
 <h1><%= @post.title %></h1>
-<p><% @post.post_body %></p>
+<p><%= @post.post_body %></p>
 <hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>
-			<%= form_for @comment do |f| %>
-			<%= f.text_field :title, placeholder: "Enter post title" %>
-			<%= f.text_area :post_body, placeholder: "Enter post body" %><br>
+			<%= form_for [@post, @comment] do |f| %>
+			<%= f.text_area :comment_body, placeholder: "Enter comment here" %><br>
 		<%= f.submit %>
 <% end %>
 <% else %>
