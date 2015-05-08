@@ -34,13 +34,13 @@ ActiveRecord::Schema.define(version: 20150506231334) do
     t.string   "fname"
     t.string   "lname"
     t.string   "email"
-    t.text     "bio"
+    t.text     "bio",        limit: 400
     t.string   "password"
     t.string   "city"
     t.string   "state"
     t.string   "country"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
