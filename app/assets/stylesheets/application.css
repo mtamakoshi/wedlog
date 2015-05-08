@@ -19,7 +19,7 @@ body {
     background-image: url("multi2.png");
     background-size: 100%;
     background-repeat: repeat-x;
-    backgrounded;
+    background-attachment: fixed;
     /*background-color: #DCF4FF ;*/
 }
 
@@ -35,7 +35,7 @@ main {
 
 
 header {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     left: 0;
@@ -73,6 +73,8 @@ header nav li a {
     /*border-radius: 6px 6px;*/
     margin-left: .5em;
 }
+
+
 
 
 
