@@ -1,10 +1,10 @@
 class CommentsController < ApplicationController
-  def new
+  def create
   end
 
   def edit
   end
 
-  def show
+  def destroy
   end
 end

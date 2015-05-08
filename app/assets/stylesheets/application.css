@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+body {
+    font-family: Arial;
+    font-size: 18px;
+    background-image: url("multi2.png");
+    /*background-image: url(../public/images/tri.png);*/*/
+    background-size: 100%;
+    background-repeat: repeat-x;
+    /*background-color: #DCF4FF ;*/
+}
+
+header {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 31%;
+    height: 100%;
+    padding: .15em 1em;
+    background-image: url("wedo.png");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+
+/*    border-bottom: 1px solid #68D1FF ;*/
+}
+
+header h3 {
+    font-weight: normal;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+    margin-right: 2.5em;
+}
+
+header nav li {
+    display: block;
+    font-size: .9em;
+}
+
+header nav li a {
+    padding: .25em .5em;
+    display: block;
+    color: white;
+    text-decoration: none;
+    /*background-color: #68D1FF ;*/
+    /*border-radius: 6px 6px;*/
+    margin-left: .5em;
+}
+
+/*main {
+    width: 600px; 
+    border: 1px solid #68D1FF ; 
+    margin: 100px auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 12px 12px;
+}*/

@@ -1,2 +1,16 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<h1>Wed Log Posts</h1>
+<h2><%= @post.comment_body %></h2>
+<hr>
+
+<% if current_user %>
+<p>Post a comment beloew</p>
+<%= form_for [@post, @comment] do |f| %>
+<%= f.text_area :comment_body %><br>
+<%= f.submit %>
+
+<% end %>
+<% else %>
+
+<h5><%= link_to 'Login', loging_path %> to comment!</h5>
+<% end %>
+

@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'welcome/index'
+
+  get 'welcome/contact'
+
+  get 'welcome/about'
+
+  get 'coments/create'
+
+  get 'coments/delete'
 
   get '/login', to:'sessions#new'
 
@@ -11,7 +20,10 @@ Rails.application.routes.draw do
 
 
   resources :users
+  resources :post do
 
+    resources :comments, shallow: true, only: [:create, :destroy]
+end
   # get '/users', to: 'users#index'
 
   # post 'users', to: 'users#create'  #you will create def create in users_controll
@@ -83,7 +95,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root 'home#index'
+  get '/welcome/contact', to: 'welcome#contact', as: 'contact'
+  get '/welcome/about', to: 'welcome#about', as: 'about'
+
+  root 'welcome', to: 'welcome#index', as: 'welcome'
 
   # get '/home', to: 'home#home'
 
