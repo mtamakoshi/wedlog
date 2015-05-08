@@ -10,9 +10,13 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#delete'
 
 
-
-
   resources :users
+  resources :posts do
+    resources :comments, shallow: true, only: [:create, :destroy]
+  end
+
+    # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
+    # much less writing and a cleaner code
 
   # get '/users', to: 'users#index'
 

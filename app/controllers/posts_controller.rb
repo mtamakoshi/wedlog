@@ -1,6 +1,8 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+validates  :title, presence: true, length: {minumum: 5}
+
   def index
   	@posts = Post.all 
   end
@@ -11,6 +13,7 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   end
 
   def show
+    @comment = Comment.new
   end
 
   def edit
