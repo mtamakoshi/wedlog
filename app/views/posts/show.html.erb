@@ -1,15 +1,22 @@
+<% if @post.errors,any? %>
+	<% @post.errors.full_message.each do |error| %>
+	<p style="color: red bold;"><% error %></p>
+	<% end%>
+<% end %>
+
 <h1><%= @post.title %></h1>
 <p><% @post.body %></p>
 <hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>
-		<% form_for [@post, @comment] do |f|] %>
-		<%= f.text_area :body %><br>
+			<% form_for [@post, @comment] do |f|] %>
+			<%= f.text_field :title, placeholder: "Enter post title" %>
+			<%= f.text_area :body placeholder: "Enter post body"%><br>
 		<%= f.submit %>
 <% end %>
 <% else %>
 	<h5><%= link_to 'Login', login_path %> to comment.</h5>
-
+	
 <% end %>
 
 <% @post.comments.each do |comment| %>

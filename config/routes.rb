@@ -13,10 +13,10 @@ Rails.application.routes.draw do
     resources :comments, shallow: true, only: [:create, :destroy]
   end
 
-  get 'welcome/index', to: 'welcome#index', as: "welcome"
+  root 'welcome/index', to: 'welcome#index', as: "welcome"
 
-  root 'home#index'
   
+
     # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
     # much less writing and a cleaner code
 
