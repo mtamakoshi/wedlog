@@ -1,6 +1,13 @@
 <h1><%= @post.title %></h1>
 <p><% @post.body %></p>
-	<% form_for [@post, @comment] do |f|] %>
-	<%= f.text_area :body %><br>
-	<%= f.submit %>
+<hr>
+<% if current_user %>
+	<h4>Post a comment below:</h4>
+		<% form_for [@post, @comment] do |f|] %>
+		<%= f.text_area :body %><br>
+		<%= f.submit %>
+<% end %>
+<% else %>
+	<h5><%= link_to 'Login', login_path %> to comment.</h5>
+
 <% end %>
