@@ -25,16 +25,18 @@ body {
 
 
 main {
+    float:right;
     width: 69%; 
-    border: 1px solid #68D1FF ; 
-    margin: 100px auto;
+    /*border: 1px solid #68D1FF ; */
+    margin: auto;
     padding: 2em;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 12px 12px;
 }
 
 
 header {
+    float: left;
     position: absolute;
     display: block;
     top: 0;
@@ -73,4 +75,6 @@ header nav li a {
     /*border-radius: 6px 6px;*/
     margin-left: .5em;
 }
+
+
 

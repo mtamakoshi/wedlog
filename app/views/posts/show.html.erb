@@ -22,7 +22,7 @@
 <% end %>
 
 <% @post.comments.each do |comment| %>
-	<p><%= comment.comment_body %> (<%= comment.user.user_name %>)</p>
+	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
 <%end %>
 
 

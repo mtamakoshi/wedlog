@@ -48,14 +48,11 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   private
 
   def post_params
-  	params.require(:post).permit(:post_body).merge(user: current_user)
+  	params.require(:post).permit(:title, :post_body).merge(user: current_user)
   end
-
 
   def set_post
   	@post = Post.find(params[:id])
   end
-
-
 
 end
