@@ -11,3 +11,7 @@
 	<h5><%= link_to 'Login', login_path %> to comment.</h5>
 
 <% end %>
+
+<% @post.comments.each do |comment| %>
+	<p><%= comment.body %> (<%= comment.user.name %>)</p>
+<%end %>
