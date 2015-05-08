@@ -1,39 +1,61 @@
 class PostsController < ApplicationController
+before_action :set_post, only: [:show, :edit, :update, :destroy]
+
+validates  :title, presence: true, length: {minumum: 5}
+
+  def index
+  	@posts = Post.all 
+  end
+
+
   def new
   	@post = Post.new
+
+  end
+
+  def show
+    @comment = Comment.new
+
   end
 
   def edit
   end
 
-  def show
-  	@comment = Comment.new
-  end
-
-  def index
-  	@posts = Post.all
-  end
-
   def create
-  	@post = Post.new(post_params)
-  	
+  	@post = Post.new(params[post_params])
+  	if @post.save
+  		redirect_to @post, notice: "Your post was created. Thank you for sharing."
+  	else
+  		render :new
+  	end
   end
+
+  def update
+  	if @post.update(post_params)
+  	redirect_to @post, notice: "Your post was updated"
+  	else
+  		render :edit
+  	end
+  end
+
 
   def destroy
   	@post.destroy
-  	flash[:notice] = "Post was delted. Do you want to post it again?"
-  	redirect_to posts_path
-  	
+  	redirect_to posts_path, notice: "Your post was deleted"
   end
+
 
   private
 
   def post_params
-  	params.require(:post).permit(:comment_body).merge(user: current_user)
+  	params.require(:post).permit(:post_body).merge(user: current_user)
   end
 
+
   def set_post
-	@post = Post.find(params[:id])
+  	@post = Post.find(params[:id])
   end
+
+
 
 end

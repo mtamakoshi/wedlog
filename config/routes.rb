@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
 
-  get 'welcome/contact'
+  get '/welcome/contact', to: 'welcome#contact', as: 'contact'
+  get '/welcome/about', to: 'welcome#about', as: 'about'
 
-  get 'welcome/about'
+  root 'welcome', to: 'welcome#index', as: 'welcome'
 
-  get 'coments/create'
-
-  get 'coments/delete'
 
   get '/login', to:'sessions#new'
 
@@ -17,13 +14,20 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#delete'
 
 
-
-
   resources :users
-  resources :post do
-
+  resources :posts do
     resources :comments, shallow: true, only: [:create, :destroy]
-end
+  end
+
+    # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
+    # much less writing and a cleaner code
+
+  root 'welcome/index', to: 'welcome#index', as: "welcome"
+
+
+  
+
+
   # get '/users', to: 'users#index'
 
   # post 'users', to: 'users#create'  #you will create def create in users_controll
@@ -95,10 +99,7 @@ end
   #     resources :products
   #   end
 
-  get '/welcome/contact', to: 'welcome#contact', as: 'contact'
-  get '/welcome/about', to: 'welcome#about', as: 'about'
 
-  root 'welcome', to: 'welcome#index', as: 'welcome'
 
   # get '/home', to: 'home#home'
 
