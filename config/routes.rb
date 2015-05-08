@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/welcome/contact', to: 'welcome#contact', as: 'contact'
   get '/welcome/about', to: 'welcome#about', as: 'about'
 
-  root 'welcome', to: 'welcome#index', as: 'welcome'
+  root 'welcome#index', as: 'welcome'
 
 
   get '/login', to:'sessions#new'
@@ -21,10 +21,6 @@ Rails.application.routes.draw do
 
     # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
     # much less writing and a cleaner code
-
-  root 'welcome/index', to: 'welcome#index', as: "welcome"
-
-
   
 
 

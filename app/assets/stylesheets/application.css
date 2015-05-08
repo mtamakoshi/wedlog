@@ -23,6 +23,17 @@ body {
     /*background-color: #DCF4FF ;*/
 }
 
+
+main {
+    width: 69%; 
+    border: 1px solid #68D1FF ; 
+    margin: 100px auto;
+    padding: 2em;
+    background-color: white;
+    border-radius: 12px 12px;
+}
+
+
 header {
     position: absolute;
     display: block;
@@ -63,11 +74,3 @@ header nav li a {
     margin-left: .5em;
 }
 
-/*main {
-    width: 600px; 
-    border: 1px solid #68D1FF ; 
-    margin: 100px auto;
-    padding: 2em;
-    background-color: white;
-    border-radius: 12px 12px;
-}*/

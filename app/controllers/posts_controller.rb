@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 before_action :set_post, only: [:show, :edit, :update, :destroy]
 
-validates  :title, presence: true, length: {minumum: 5}
+
 
   def index
   	@posts = Post.all 
@@ -22,7 +22,7 @@ validates  :title, presence: true, length: {minumum: 5}
   end
 
   def create
-  	@post = Post.new(params[post_params])
+  	@post = Post.new(post_params)
   	if @post.save
   		redirect_to @post, notice: "Your post was created. Thank you for sharing."
   	else
