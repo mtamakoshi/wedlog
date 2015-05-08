@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
 
-  get 'welcome/index'
-
   get '/login', to:'sessions#new'
 
   post '/login', to: 'sessions#create'
@@ -15,6 +13,10 @@ Rails.application.routes.draw do
     resources :comments, shallow: true, only: [:create, :destroy]
   end
 
+  get 'welcome/index', to: 'welcome#index', as: "welcome"
+
+  root 'home#index'
+  
     # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
     # much less writing and a cleaner code
 
@@ -89,7 +91,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-  root 'home#index'
+
 
   # get '/home', to: 'home#home'
 
