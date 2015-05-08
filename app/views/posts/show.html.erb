@@ -11,9 +11,9 @@
 <hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>
-			<% form_for [@post, @comment] do |f| %>
-			<%= f.text_field :title, placeholder: "Enter post title" %>
-			<%= f.text_area :post_body, placeholder: "Enter post body" %><br>
+			<%= form_for @comment do |f| %>
+			
+			<%= f.text_area :post_body, placeholder: "Enter comment body" %><br>
 		<%= f.submit %>
 <% end %>
 <% else %>

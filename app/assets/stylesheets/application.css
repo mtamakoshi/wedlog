@@ -17,18 +17,17 @@ body {
     font-family: Arial;
     font-size: 18px;
     background-image: url("multi2.png");
-    /*background-image: url(../public/images/tri.png);*/*/
     background-size: 100%;
     background-repeat: repeat-x;
+    backgrounded;
     /*background-color: #DCF4FF ;*/
 }
 
 
 main {
-    float:right;
-    width: 69%; 
-    /*border: 1px solid #68D1FF ; */
-    margin: auto;
+    width: 61%; 
+    border: 1px solid black ; 
+    margin-left: 34%;
     padding: 2em;
     /*background-color: white;*/
     border-radius: 12px 12px;
@@ -36,7 +35,6 @@ main {
 
 
 header {
-    float: left;
     position: absolute;
     display: block;
     top: 0;
