@@ -8,6 +8,8 @@
 
 <h1><%= @post.title %></h1>
 <p><%= @post.post_body %></p>
+<p>Click <%= link_to 'here', edit_post_path %> to edit your post</p>
+<p> Click <%= link_to 'here', post_path(@post.id), method: :delete %> to delete your post</p>
 <hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>

@@ -6,7 +6,6 @@ Rails.application.routes.draw do
 
   root 'welcome#index', as: 'welcome'
 
-
   get '/login', to:'sessions#new'
 
   post '/login', to: 'sessions#create'
@@ -14,15 +13,10 @@ Rails.application.routes.draw do
   delete '/logout', to: 'sessions#delete'
 
   resources :users
-  resources :posts do
+  resources :post do
     resources :comments, shallow: true, only: [:create, :destroy]
   end
 
-  get '/signup', to: 'users#new', as: 'signup'
-
-    # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
-    # much less writing and a cleaner code
-  
 
 
   # get '/users', to: 'users#index'

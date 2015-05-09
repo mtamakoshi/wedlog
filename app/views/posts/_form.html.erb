@@ -1,4 +1,4 @@
-<% if @post.errors,any? %>
+<% if @post.errors.any? %>
 	<% @post.errors.full_message.each do |error| %>
 	<p style="color: red bold;"><% error %></p>
 	<% end%>
@@ -11,8 +11,8 @@
 		<%= f.text_field :title, placeholder: "Enter post title" %>
 	</p>
 		<p>
-		<%= f.label :body %>
-		<%= f.text_field :body, placeholder: "Enter post body" %>
+		<%= f.label :post_body %>
+		<%= f.text_field :post_body, placeholder: "Enter post body" %>
 	</p>
 	<p>
 		<%= f.submit %>
