@@ -8,8 +8,10 @@
 
 <h1><%= @post.title %></h1>
 <p><%= @post.post_body %></p>
-<p>Click <%= link_to 'here', edit_post_path %> to edit your post</p>
-<p> Click <%= link_to 'here', post_path(@post.id), method: :delete %> to delete your post</p>
+<% if current_user and current_user == @user %>
+		<p>Click <%= link_to 'here', edit_post_path %> to edit your post</p>
+		<p> Click <%= link_to 'here', post_path(@post.id), method: :delete %> to delete your post</p>
+<% end %>
 <hr>
 <% @post.comments.each do |comment| %>
 	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
@@ -22,7 +24,7 @@
 		<%= f.submit %>
 <% end %>
 <% else %>
-	<h5><%= link_to 'Login', login_path %> to comment.</h5>
+	<h5><%= link_to 'Login', login_path %> to post or comment.</h5>
 	
 <% end %>
 
