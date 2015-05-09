@@ -36,6 +36,7 @@ end
   def destroy
   	@user = User.find(params[:id])
   	@user.destroy
+    session[:user_id] = nil
   	flash[:notice] = "Your profile has been deleted."
   	redirect_to new_user_path
   end

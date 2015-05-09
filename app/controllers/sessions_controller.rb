@@ -17,6 +17,6 @@ end
   def delete  #log out
   	session[:user_id] = nil
   	flash[:notice] = "You are logged out. See you soon!"
-  	redirect_to new_user_path
+  	redirect_to welcome_path
   end
 end
