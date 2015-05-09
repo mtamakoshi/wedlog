@@ -46,7 +46,7 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   def destroy
     @post = Post.find(params[:id])
   	@post.destroy
-    flash[:notice] = "Your post has been delted."
+    flash[:notice] = "Your post has been deleted."
   	redirect_to posts_path
   end
 
