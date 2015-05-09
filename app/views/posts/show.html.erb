@@ -11,6 +11,10 @@
 <p>Click <%= link_to 'here', edit_post_path %> to edit your post</p>
 <p> Click <%= link_to 'here', post_path(@post.id), method: :delete %> to delete your post</p>
 <hr>
+<% @post.comments.each do |comment| %>
+	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
+<%end %>
+<hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>
 			<%= form_for [@post, @comment] do |f| %>
@@ -22,8 +26,5 @@
 	
 <% end %>
 
-<% @post.comments.each do |comment| %>
-	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
-<%end %>
 
 
