@@ -18,6 +18,10 @@ Rails.application.routes.draw do
   end
 
 
+    # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except
+    # much less writing and a cleaner code
+
+
 
   # get '/users', to: 'users#index'
 

@@ -7,7 +7,12 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 
   def new
-  	@post = Post.new
+  	if current_user
+      @post = Post.new
+    else
+      flash[:notice]="Please sign in order to post"
+      redirect_to login_path
+    end
 
   end
 
@@ -24,13 +29,10 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   # end
 
   def create
-  	@post = Post.new(post_params)
-  	if @post.save
-  		redirect_to posts_path, notice: "Your post was created. Thank you for sharing."
-  	else
-  		render :new
-  	end
-  end
+  	@post = Post.create(post_params)
+    flash[:notice] = "Your post was created. Thank you for sharing."
+  	redirect_to posts_path 
+    end
 
   def update
   	if @post.update(post_params)
