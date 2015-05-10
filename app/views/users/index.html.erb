@@ -1,6 +1,6 @@
 <h1>List of Wed Log users</h1>
 
-<ol>
+<ul style="list-style: none;">
 	<% @users.each do |user| %>	
 		<li><%= link_to user.username, user_path(user.id)%></li>
 

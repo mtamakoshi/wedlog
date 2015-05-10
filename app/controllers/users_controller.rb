@@ -38,7 +38,7 @@ end
   	@user.destroy
     session[:user_id] = nil
   	flash[:notice] = "Your profile has been deleted."
-  	redirect_to new_user_path
+  	redirect_to loggedout_path
   end
   	
 end

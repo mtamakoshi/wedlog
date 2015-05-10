@@ -21,10 +21,7 @@
 <h5>Enter a  <%=link_to "New Post",  new_post_path %></h5>
 
 <% else %>
-    <h5><%= link_to 'Login', login_path %> to post or comment.</h5><br>
-    <h5><%= link_to "Register", new_user_path %></h5>
-
-  
+    <h5><%= link_to 'Login', login_path %> or <%= link_to "Register", new_user_path %> to post or comment.</h5><br>
 <% end %>
 
 
