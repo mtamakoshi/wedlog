@@ -1,9 +1,11 @@
 <% content_for :use_login do %>
 
-<% if @user.errors.any? %>
-	<% @users.errors.full_messages.each do |error| %>
-	<p style="color: #E55451;">error text<%= error %></p>
+<% if @user.errors.full_messages.any? %>
+<ul>
+	<% @user.errors.full_messages.each do |error| %>
+	<li style="color: #E55451;"><%= error %></li>
 	<% end %>
+</ul>
 <% end %>
 
 <div id="signup_form">
@@ -33,6 +35,9 @@
 
 <p>
 	<%= f.password_field :password, placeholder: 'Password'%>
+</p>
+<p>
+	<%= f.email_field :email_confirmation, placeholder: 'Please re-enter you e-mail'%>
 </p>
 
 <p>

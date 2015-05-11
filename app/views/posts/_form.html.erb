@@ -1,8 +1,10 @@
 <% content_for :use_ do %>
-<% if @post.errors.any? %>
+<% if @post.errors.full_messages.any? %>
+<ul>
 	<% @post.errors.full_message.each do |error| %>
-	<p style="color: red bold;"><% error %></p>
+	<li style="color: red bold;"><%= error %></li>
 	<% end%>
+</ul>
 <% end %>
 
 
