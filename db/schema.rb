@@ -34,13 +34,13 @@ ActiveRecord::Schema.define(version: 20150510193539) do
     t.string   "fname"
     t.string   "lname"
     t.string   "email"
-    t.text     "bio",                 limit: 400
+    t.text     "bio"
     t.string   "password"
     t.string   "city"
     t.string   "state"
     t.string   "country"
-    t.datetime "created_at",                      null: false
-    t.datetime "updated_at",                      null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
