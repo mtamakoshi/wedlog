@@ -1,7 +1,12 @@
-<h1>Sign up form</h1>
+<h1>Sign Up Below</h1>
+<% content_for :use_login do %>
+
+
+
 
 <%= render 'form' %>
 <br>
 
-<%= link_to 'cancel registration', users_path %>
+<p class="cancel">Click <%= link_to 'here', users_path %> to Cancel Registration</p>
 
+<% end -%>

@@ -1,3 +1,4 @@
+<% content_for :use_ do %>
 <% if @post.errors.any? %>
 	<% @post.errors.full_message.each do |error| %>
 	<p style="color: red bold;"><% error %></p>
@@ -19,3 +20,4 @@
 	</p>
 
 	<% end %>
+<% end %>

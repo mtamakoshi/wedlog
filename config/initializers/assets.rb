@@ -7,6 +7,10 @@ Rails.application.config.assets.paths << Rails.root.join("app", "assets", "fonts
 
 Rails.application.config.assets.precompile += %w( welcome.css )
 
+Rails.application.config.assets.precompile += %w( login.css )
+
+Rails.application.config.assets.precompile += %w( posts.css )
+
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 

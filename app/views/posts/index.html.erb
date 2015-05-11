@@ -1,29 +1,32 @@
-<h1>Recent Posts</h1>
+<% content_for :use_posts do %>
 
+<h1>Recent Posts</h1>
+<div class="table">
 <table>
   <tr>
-	<td>Title</td>
-	<td>Post body</td>
-	<td>Username</td>
-	<td>Posted on</td>
+	<td class="thead_title">Title</td>
+	<td class="thead_body">Post body</td>
+	<td class="thead_username">Username</td>
+	<td class="thead_date">Posted on</td>
 	</tr>	
 	<% @posts.each do |post| %>
   <tr>
-    <td><%= link_to post.title.truncate(60), post_path(post.id) %></td>
-    <td><%= post.post_body.truncate(60) %></td>
+    <td class="post_list_title"><%= link_to post.title.truncate(60), post_path(post.id) %></td>
+    <td class="post_list_body"><%= post.post_body.truncate(60) %></td>
 
-    <td><%= post.user.username %></td>		
-    <td><%= post.created_at.to_date.strftime("%m/%d/%Y") %></td>
+    <td class="post_list_username"><%= post.user.username %></td>		
+    <td class="post_list_date"><%= post.created_at.to_date.strftime("%m/%d/%Y") %></td>
     <% end %>
   </tr>
 </table>
+</div>
 <% if current_user %>
-<h5>Enter a  <%=link_to "New Post",  new_post_path %></h5>
+<p class="enter_post"><%=link_to "Click here",  new_post_path %> to Enter a New Post</p>
 
 <% else %>
-    <h5><%= link_to 'Login', login_path %> or <%= link_to "Register", new_user_path %> to post or comment.</h5><br>
+    <p class ="login_post"> <%= link_to 'Click here', login_path %> to Log in or <%= link_to 'Click here', new_user_path %> to Register to post or comment.</p><br>
 <% end %>
 
 
-
+<% end -%>
 

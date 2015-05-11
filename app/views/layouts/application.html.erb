@@ -5,6 +5,8 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
   <%= stylesheet_link_tag 'welcome', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_welcome) %>
+  <%= stylesheet_link_tag 'login', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_login) %>
+  <%= stylesheet_link_tag 'posts', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_posts) %>
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -49,6 +51,8 @@
   <% end %>
 <%= yield %>
 <%= yield :use_welcome %>
+<%= yield :use_posts %>
+<%= yield :use_login %>
 
 
 </main>

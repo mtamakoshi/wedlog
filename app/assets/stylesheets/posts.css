@@ -1,0 +1,92 @@
+header nav{
+
+    padding-top: auto;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+	color: #848482;
+	text-shadow: 2px 2px #FFFFFF;
+	font-weight: bold;
+
+
+}
+.table{
+	color: #413839;
+	margin-left: 10%;
+}
+
+table, th, tr, td {
+    border: 3px solid #848482;
+    width: 90%;
+}
+
+.thead_title{
+	font-size: 30px;
+	font-weight: bold;
+	width: 30%
+}
+
+.thead_body{
+	font-size: 30px;
+	font-weight: bold;
+	width: 40%
+}
+.thead_username{
+	font-size: 30px;
+	font-weight: bold;
+	width: 15%;
+}
+.thead_date{
+	font-size: 30px;
+	font-weight: bold;
+	width: 15%;
+}
+
+.post_list_title {
+	font-size: 20px;
+	width: 30%;
+}
+.post_list_body {
+	font-size: 20px;
+	width: 40%;
+
+}
+.post_list_username {
+	font-size: 20px;
+	width: 15%;
+
+
+}
+.post_list_date {
+	font-size: 20px;
+	width: 15%;;
+
+}
+
+a{
+	color: #413839;
+	text-decoration: none;
+}
+a:hover{
+
+	color: #F9966B;
+}
+
+.table{
+	color: #413839;
+	margin-left: 10%;
+}
+
+p.enter_post{
+	text-align: center;
+	font-size: 30px;
+}
+
+p.login_post{
+
+	text-align: center;
+	font-size: 30px;
+
+}

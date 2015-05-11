@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'badscript';
+  src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+  color: #848482;
+  text-shadow: 2px 2px #FFFFFF;
+  font-weight: bold;
+
+
+}
+
+p.cancel {
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+
+} 
+
+
+.signup_form{
+    border: 3px solid #848482;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+/*    background-color: rgba(255, 245, 238, 0.7);*/
+    font-family: 'badscript';
+
+    
+}
+
+}
+.login_form{
+    border: 3px solid #848482;
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+/*    background-color: rgba(255, 245, 238, 0.7);*/
+    font-family: 'badscript';
+
+    
+}
+p{
+  margin-left: 30%;
+  color: #413839;
+}
+
+a{
+  color: #848482;
+  text-decoration: none;
+}
+a:hover{
+
+  color: #F9966B;
+}
+
+.submitb{
+  width: 50px;
+  height: 30px;
+}
