@@ -15,6 +15,8 @@
 			<%= f.text_field :title, placeholder: "Enter post title" %><br>
 			<%= f.text_area :post_body, placeholder: "Enter post body" %><br>
 			<%= f.submit %>
+			<br><br><br>
+			<%= link_to 'cancel', posts_path %>
 			
 		<% end %>
 <% else %>
