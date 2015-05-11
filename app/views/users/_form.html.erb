@@ -32,13 +32,19 @@
 	<%= f.email_field :email, placeholder: 'E-mail'%>
 </p>
 
+<p>
+	<%= f.email_field :email_confirmation, placeholder: 'Please re-enter your e-mail'%>
+</p>
 
 <p>
 	<%= f.password_field :password, placeholder: 'Password'%>
 </p>
+
 <p>
-	<%= f.email_field :email_confirmation, placeholder: 'Please re-enter you e-mail'%>
+	<%= f.password_field :password_confirmation, placeholder: 'Please re-enter your password'%>
 </p>
+
+
 
 <p>
 	<%= f.text_field :city, placeholder: 'City'%>

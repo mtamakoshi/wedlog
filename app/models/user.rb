@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	validates :username, length:  {minimum: 4, maximum: 30}
 	has_many	:posts
 	has_many	:comments
 	validates_uniqueness_of	:email
