@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  get '/welcome/contact', to: 'welcome#contact', as: 'contact'
+  get '/welcome/loggedout', to: 'welcome#loggedout', as: 'loggedout'
   get '/welcome/about', to: 'welcome#about', as: 'about'
 
   root 'welcome#index', as: 'welcome'

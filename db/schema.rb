@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506231334) do
+ActiveRecord::Schema.define(version: 20150510193539) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment_body"
@@ -34,13 +34,17 @@ ActiveRecord::Schema.define(version: 20150506231334) do
     t.string   "fname"
     t.string   "lname"
     t.string   "email"
-    t.text     "bio",        limit: 400
+    t.text     "bio"
     t.string   "password"
     t.string   "city"
     t.string   "state"
     t.string   "country"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
 end

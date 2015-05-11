@@ -10,11 +10,13 @@
 <p><% @post.post_body %></p>
 <hr>
 <% if current_user %>
-	<h4>Post a posting below:</h4>
+	<h4>Enter and submit a post below:</h4>
 		<%= form_for @post do |f| %>
 			<%= f.text_field :title, placeholder: "Enter post title" %><br>
 			<%= f.text_area :post_body, placeholder: "Enter post body" %><br>
 			<%= f.submit %>
+			<br><br><br>
+			<%= link_to 'cancel', posts_path %>
 			
 		<% end %>
 <% else %>

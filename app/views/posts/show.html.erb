@@ -1,4 +1,4 @@
-<h1>Wed Log Posts</h1>
+<h1>H&M Blog Posts</h1>
 
 <% if @post.errors.any? %>
 	<% @post.errors.full_message.each do |error| %>
@@ -8,8 +8,12 @@
 
 <h1><%= @post.title %></h1>
 <p><%= @post.post_body %></p>
-<p>Click <%= link_to 'here', edit_post_path %> to edit your post</p>
-<p> Click <%= link_to 'here', post_path(@post.id), method: :delete %> to delete your post</p>
+				<p><%= link_to 'Edit your post', edit_post_path %></p>
+				<p><%= link_to 'Delete your post', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
+<hr>
+<% @post.comments.each do |comment| %>
+	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
+<%end %>
 <hr>
 <% if current_user %>
 	<h4>Post a comment below:</h4>
@@ -18,12 +22,9 @@
 		<%= f.submit %>
 <% end %>
 <% else %>
-	<h5><%= link_to 'Login', login_path %> to comment.</h5>
+	<h5><%= link_to 'Login', login_path %> to post or comment.</h5>
 	
 <% end %>
 
-<% @post.comments.each do |comment| %>
-	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
-<%end %>
 
 

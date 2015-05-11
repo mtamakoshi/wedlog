@@ -1,4 +1,4 @@
-<h1>Please log in</h1>
+<h1>Please log in or <%= link_to "Register", new_user_path %></h1>
 
 <%= form_tag '/login', method: :post do %>
 <p>
@@ -6,11 +6,11 @@
 	<%= email_field_tag :email%>
 </p>
 <p>
-	<%= label_tag :pssword %>
+	<%= label_tag :password %>
 	<%= password_field_tag :password %>
 </p>
 <p>
-	<%= submit_tag :login %>
+	<%= submit_tag :Login %>
 	
 </p>
 <% end %>
