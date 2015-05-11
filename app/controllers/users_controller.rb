@@ -23,8 +23,8 @@ class UsersController < ApplicationController
   		 redirect_to user_path(@user), notice: "New account created."
   		else
   			flash[:alert] = "There was a problem"
+    end
   end
-end
 
   def update 
   	@user = User.find(params[:id])
@@ -35,10 +35,13 @@ end
   	
   def destroy
   	@user = User.find(params[:id])
-  	@user.destroy
-    session[:user_id] = nil
-  	flash[:notice] = "Your profile has been deleted."
-  	redirect_to loggedout_path
+  	if  @user.destroy
+        session[:user_id] = nil
+  	    flash[:notice] = "Your profile has been deleted."
+    else
+        flash[:alert] = "There was a problem deleting ypu profile."
+  	end
+    redirect_to loggedout_path
   end
   	
 end

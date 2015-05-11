@@ -34,7 +34,8 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
   end
 
   def update
-  	if @post.update(post_params)
+  	if current_user
+      @post.update(post_params)
   	redirect_to posts_path, notice: "Your post was updated"
   	else
   		render :edit
@@ -43,10 +44,14 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
 
 
   def destroy
-    @post = Post.find(params[:id])
-  	@post.destroy
-    flash[:notice] = "Your post has been deleted."
-  	redirect_to posts_path
+    if current_user
+        @post = Post.find(params[:id])
+      	@post.destroy
+        flash[:notice] = "Your post has been deleted."
+      	redirect_to posts_path
+    else
+      nil
+    end
   end
 
 
