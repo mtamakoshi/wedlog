@@ -1,10 +1,12 @@
-<h1>H&M Wedding Blog Members</h1>
+<h1>Wedlog Members</h1>
+<% content_for :use_user do %>
 
-<ul style="list-style: none;">
+<ul class="member_list">
 	<% @users.each do |user| %>	
-		<li><%= link_to user.username, user_path(user.id)%></li>
+		<li class="user_list"><%= link_to user.username, user_path(user.id)%></li>
 
 <!-- first argument: what you want to call the route, second argument: where do you want the route to go, in this case, the link will be shown as username and will link to user_path(User's page) -->
 	<% end %>
 </ol>
 
+<% end %>

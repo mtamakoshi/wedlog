@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'badscript';
+  src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 header nav{
 
     padding-top: auto;
@@ -67,7 +74,7 @@ table, th, tr, td {
 
 a{
 	color: #413839;
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:hover{
 
@@ -90,3 +97,49 @@ p.login_post{
 	font-size: 30px;
 
 }
+
+.title_field{
+  width: 70%;
+  height: 50px;
+  font-size: 28px;
+  font-family: 'badscript';
+}
+
+.body_field{
+  width: 70%;
+  height: 80px;
+  font-size: 25px;
+  font-family: 'badscript';
+}
+
+.title_label_field{
+  font-size: 25px;
+  font-family: 'badscript';
+  padding-right: 9%;
+  text-align: center;
+}
+.body_label_field{
+  font-size: 25px;
+  font-family: 'badscript';
+  padding-right: 5%;
+  text-align: center;
+}
+
+.submit{
+  width: 50%;
+  height: 40px;
+  margin-left: 20% ;
+  background-color: rgba(229, 228, 226, 0.7); 
+  border-radius: 50px;
+  font-family: 'badscript';
+  font-size: 20px;
+}
+
+
+.edit_field{
+	width: 80%;
+	margin-left: 15%;
+}
+
+
+

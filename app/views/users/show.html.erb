@@ -1,23 +1,42 @@
+<% content_for :use_user do %>
+
+
 <% if current_user and current_user == @user %>
-<p>Good to see you again, <%= @user.username %>!</p>
-<p><%= link_to 'Delete Profile', user_path(@user.id), method: :delete, data: {confirm: "Are you sure you wish to delete your profile?"} %></p>
-<p><%= link_to "Edit Profile", edit_user_path(@user.id) %></p>
+	<p>Good to see you again, <%= @user.username %>!</p>
+	<p><%= link_to 'Delete Profile', user_path(@user.id), method: :delete, data: {confirm: "Are you sure you wish to delete your profile?"} %></p>
+	<p><%= link_to "Edit Profile", edit_user_path(@user.id) %></p>
 <% else %>
-<p><%= "You are viewing "  + @user.username + "'s" " profile."%></p>
-<p>Name:</p>
-<p><%= @user.fname  + " " + @user.lname %></p>
-<p>Email Address:</p>
-<p><%= @user.email %></p>
-<p>Bio:</p>
-<p><%= @user.bio %></p>
-<p> City, State/Province, County:</p>
-<p><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
-<% end %>
-<h3><%= @user.username %>'s Posts</h3>
-<ul style="list-style: none;">
-	<% @user.posts.each do |post| %>
-	<li><%= link_to post.title, post %></li>
-	<% end %>
-</ul>
+<div class="user_page">
+
+	<div class="user_info">
+		<p style="font-weight"><%= "You are viewing "  + @user.username + "'s" " profile."%></p>
+		<h2>Name:</h2>
+
+		<p><%= @user.fname  + " " + @user.lname %></p>
+
+		<h2>Email Address:</h2>
+		<p><%= @user.email %></p>
+
+		<h2>Bio:</h2>
+
+		<p><%= @user.bio %></p>
+
+		<h2> City, State/Province, County:</h2>
+
+		<p><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
+		<% end %>
+	</div>
+	<div class="line"></div>
+
+	<div class="user_post">
+		<h3><%= @user.username %>'s Posts</h3>
+			<ul style="list-style: none;">
+				<% @user.posts.each do |post| %>
+					<li><%= link_to post.title, post %></li>
+				<% end %>
+			</ul>
 
 <%= link_to 'Back to Users', users_path %> 
+	</div>
+	</div>
+<% end -%>

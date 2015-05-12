@@ -81,9 +81,9 @@ header nav li a {
 
 main {
     width: 80%; 
-    border: 1px solid black ; 
+/*    border: 1px solid black ; */
     margin-top: 50px;
-    margin-left: 10%;
+   margin-left: 10%;
 
     /*background-color: white;
 /*    border-radius: 12px 12px;*/
@@ -91,7 +91,7 @@ main {
 
 
 a.active{
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 div.logo{
@@ -128,5 +128,12 @@ div.img{
     width: 900px;
     height: 800px;
 
+}
+
+.flash_notice .flash_alert {
+    font-size: 18px;
+    color: #335078;
+    text-decoration: underline;
+    font-style: italic;
 }
 

@@ -1,23 +1,26 @@
-<% content_for :use_ do %>
-<% if @post.errors.any? %>
-	<% @post.errors.full_message.each do |error| %>
-	<p style="color: red bold;"><% error %></p>
+<% content_for :use_posts do %>
+<% if @post.errors.full_messages.any? %>
+	<ul><% @post.errors.full_message.each do |error| %>
+		<li style="color: red bold;"><%= error %></li>
 	<% end%>
+	</ul>
 <% end %>
 
-
+<div class="edit_field">
 <%= form_for @post do |f| %>
+
 	<p>
-		<%= f.label :title %>
-		<%= f.text_field :title, placeholder: "Enter post title" %>
+		<%= f.label :title, :class => 'title_label_field' %>
+		<%= f.text_field :title, placeholder: "Enter post title", :class => 'title_field' %>
 	</p>
 		<p>
-		<%= f.label :post_body %>
-		<%= f.text_field :post_body, placeholder: "Enter post body" %>
+		<%= f.label :post_body, :class => 'body_label_field' %>
+		<%= f.text_field :post_body, placeholder: "Enter post body", :class => 'body_field' %>
 	</p>
 	<p>
-		<%= f.submit %>
+		<%= f.submit :class => 'submit' %>
 	</p>
 
 	<% end %>
+</div>
 <% end %>
