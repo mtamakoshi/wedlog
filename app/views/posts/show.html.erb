@@ -8,8 +8,8 @@
 
 <h1><%= @post.title %></h1>
 <p><%= @post.post_body %></p>
-				<p><%= link_to 'Edit your post', edit_post_path %></p>
-				<p><%= link_to 'Delete your post', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
+			<p><%= link_to 'Edit your post', edit_post_path %></p>
+			<p><%= link_to 'Delete your post', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
 				<!-- <h3><rubytag= time_ago_in_words(post_body.created_at) rubytag></h3> -->
 <hr>
 <% @post.comments.each do |comment| %>

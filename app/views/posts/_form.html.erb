@@ -2,8 +2,9 @@
 <% if @post.errors.full_messages.any? %>
 	<ul><% @post.errors.full_message.each do |error| %>
 		<li style="color: red bold;"><%= error %></li>
-	<% end%>
+	<% end %>
 	</ul>
+<% end %>
 
 
 <div class="edit_field">
@@ -13,7 +14,7 @@
 		<%= f.label :title, :class => 'title_label_field' %>
 		<%= f.text_field :title, placeholder: "Enter post title", :class => 'title_field' %>
 	</p>
-		<p>
+	<p>
 		<%= f.label :post_body, :class => 'body_label_field' %>
 		<%= f.text_field :post_body, placeholder: "Enter post body", :class => 'body_field' %>
 	</p>
@@ -21,5 +22,6 @@
 		<%= f.submit :class => 'submit' %>
 	</p>
 	<% end %>
-</div>
-<% end %>
+	</div>
+
+	<% end -%>

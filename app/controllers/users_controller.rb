@@ -26,7 +26,8 @@ class UsersController < ApplicationController
   			flash[:alert] = "There was a problem creating your account, please try again."
         redirect_to new_user_path
     end
-
+  end
+  
   def update 
     @user = User.find(params[:id])
     @user.update(user_params)

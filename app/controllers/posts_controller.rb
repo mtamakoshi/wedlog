@@ -19,13 +19,6 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
     @comment = Comment.new
   end
 
-  # def edit
-  #   @post = Post.find(params[:id])
-  #   redirect_to @posts_path, 
-  #   flash[:notice] = "Your post was updated"
-  #   else
-  #     render :edit
-  # end
 
   def create
   	@post = Post.create(post_params)

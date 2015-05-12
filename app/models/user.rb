@@ -8,4 +8,11 @@ class User < ActiveRecord::Base
 	validates :password, confirmation: true, presence: true
 	validates_presence_of :username, :fname, :lname, :email, :bio, :password, :city, :state, :country
 
+	def self.find_by_email(email)
+        User.where("email = lower(?)", email).first
+    end
+
+    def self.find_by_username(username)
+        User.where("username = lower(?)", username).first
+    end
 end
