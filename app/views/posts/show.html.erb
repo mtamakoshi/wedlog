@@ -10,6 +10,7 @@
 <p><%= @post.post_body %></p>
 				<p><%= link_to 'Edit your post', edit_post_path %></p>
 				<p><%= link_to 'Delete your post', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
+				<!-- <h3><rubytag= time_ago_in_words(post_body.created_at) rubytag></h3> -->
 <hr>
 <% @post.comments.each do |comment| %>
 	<p><%= comment.comment_body %> (<%= comment.user.username %>)</p>
@@ -20,13 +21,14 @@
 			<%= form_for [@post, @comment] do |f| %>
 			<%= f.text_area :comment_body, placeholder: "Enter comment here" %><br>
 		<%= f.submit %>
-		<br><br>
-		<%= link_to 'cancel', posts_path %>
+
+		<br><br><%= link_to 'cancel', posts_path %>
+
 <% end %>
 <% else %>
 	<h5><%= link_to 'Login', login_path %> to post or comment.</h5>
-	
 <% end %>
+
 
 
 
