@@ -24,9 +24,9 @@ class UsersController < ApplicationController
   	   else
   			flash[:alert] = "There was a problem creating your account, please try again."
         redirect_to new_user_path
-      end
+    end
   end
-
+  
   def update 
     @user = User.find(params[:id])
     @user.update(user_params)
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
         session[:user_id] = nil
         flash[:notice] = "Your profile has been deleted."
     else
-        flash[:alert] = "There was a problem deleting ypu profile."
+        flash[:alert] = "There was a problem deleting your profile."
     end
     redirect_to loggedout_path
   end

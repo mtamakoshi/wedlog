@@ -9,12 +9,13 @@
 		</ul>
 	<% end %>
 
+
 	<div id="signup_form">
-	<%= form_for @user do |f| %>
+		<%= form_for @user do |f| %>
+
 			<p>
 				<%= f.text_field :username, placeholder: 'Username', :class => 'text_field' %>
 			</p>
-
 			<p>
 				<%= f.text_field :fname, placeholder: 'First Name', :class => 'text_field' %>
 			</p>
@@ -25,20 +26,19 @@
 				<%= f.text_field :bio, placeholder: 'Bio', :class => 'text_field' %>
 			</p>
 			<p>
-				<%= f.email_field :email, placeholder: 'E-mail', :class => 'text_field' %> <br>
-				<%= f.email_field :email_confirmation, placeholder: 'Re-enter E-mail', :class => 'text_field' %>
+				<%= f.email_field :email, placeholder: 'E-mail', :class => 'text_field' %>
 			</p>
 			<p>
-				<%= f.email_field :email_confirmation, placeholder: 'Please re-enter your e-mail'%>
+				<%= f.email_field :email_confirmation, placeholder: 'Please re-enter your e-mail', :class => 'text_field' %>
 			</p>
 			<p>
 				<%= f.password_field :password, placeholder: 'Password', :class => 'text_field' %>
 			</p>
 			<p>
-				<%= f.password_field :password_confirmation, placeholder: 'Please re-enter your password'%>
+				<%= f.password_field :password_confirmation, placeholder: 'Please re-enter your password', :class => 'text_field' %>
 			</p>
 			<p>
-				<%= f.text_field :city, placeholder: 'City'%>
+				<%= f.text_field :city, placeholder: 'City', :class => 'text_field' %>
 			</p>
 			<p>
 				<%= f.text_field :state, placeholder: 'State/Province', :class => 'text_field' %>
@@ -48,6 +48,7 @@
 			</p>
 			<br>
 			<p><%= f.submit :class => 'submit' %></p>	
-			<% end %>
+		<% end %>
 	</div>
+
 <% end -%>

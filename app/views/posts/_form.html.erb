@@ -5,21 +5,20 @@
 			<% end %>
 		</ul>
 	<% end %>
-
-
 	<div class="edit_field">
 		<%= form_for @post do |f| %>
 			<p>
 				<%= f.label :title, :class => 'title_label_field' %>
 				<%= f.text_field :title, placeholder: "Enter post title", :class => 'title_field' %>
 			</p>
-				<p>
+			<p>
 				<%= f.label :post_body, :class => 'body_label_field' %>
 				<%= f.text_field :post_body, placeholder: "Enter post body", :class => 'body_field' %>
 			</p>
 			<p>
 				<%= f.submit :class => 'submit' %>
 			</p>
-			<% end %>
+		<% end %>
 	</div>
 <% end %>
+
