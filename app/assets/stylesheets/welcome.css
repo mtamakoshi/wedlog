@@ -75,7 +75,10 @@ header nav li a {
     margin-left: 5%;
 }
 
-
+a:hover{
+    color: #F9966B;
+    font-size:105%;
+}
 
 
 a.active{
@@ -84,11 +87,14 @@ a.active{
 
 #slides {
     margin-top: 5%;
-    margin-left: 13%;
+    width: 100%;
 
     }
 
 img{
+      width: 100%;
+      margin-left: 23%;
+      height: 600px;
       border: none;
       border-radius: 10px;
     }
@@ -97,38 +103,27 @@ img{
       margin: 0 auto
     }
 
- h2{
+ h2 {
     color: #FFF5EE;
     font-size: 30px;
     margin: 1% auto 0 5%;
     text-shadow: 2px 2px 2px #D1D0CE;
 /*    margin-top: 10px;*/
 }
+h3  {
+    color: #413839;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #D1D0CE;
+}
+
 
 main {
     width: 100%;
 }
 
-/*div.logo{
-    margin-top: 70%;
-    position:relative;
-    margin-left: 70%;
-    margin-bottom: 0;
-    background-image: url("logo.jpg");
-    background-size: 100%;
-    background-position: center;
-    width: 500px;
-    height: 275px; 
-    z-index: -1;
+.logoutmsg{
+    font-size: 25px;
+    color: #848482;
+    text-shadow: 2px 2px #FFFFFF;
 
 }
-
-h2{
-    color: #FFF5EE;
-    font-size: 30px;
-    margin-bottom: 0;
-    margin-top: 10px;
-    margin-left: 5%;
-}*/
-
-

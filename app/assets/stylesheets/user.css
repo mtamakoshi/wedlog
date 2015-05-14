@@ -24,7 +24,7 @@
 
 .line{
 	position: absolute;
-	top: auto;
+	top: 70%;
 	left: 40%;
 	width: 1%;
 	height: 100%;
@@ -41,11 +41,13 @@ p {
 }
 
 h3{
-    color: #413839;
-    font-size: 25px;
-/*    margin: 1% auto 0 5%;*/
-    text-shadow: 2px 2px 2px #D1D0CE;
-/*    margin-top: 10px;*/
+
+	font-size: 25px;
+	text-align: center;
+	color: #848482;
+	text-shadow: 2px 2px #FFFFFF;
+	font-weight: bold;
+}
 
 }
 
@@ -76,10 +78,12 @@ li.user_list{
 }
 a:hover{
 	color: #F9966B;
+	font-size:105%;
 }
 
 a{
 	color: #413839;
+
 }
 
 h1{
@@ -100,10 +104,5 @@ li.user_post_list{
 	font-size: 25px;
 	text-decoration: none;
 }
-
-
-
-
-
 
 

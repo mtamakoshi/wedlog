@@ -55,7 +55,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-
+  font-size: 105%;
   color: #F9966B;
 }
 
@@ -126,4 +126,8 @@ p.ppassword label {
   font-family: 'badscript';
 }
 
-
+a {
+  + color: #FFFFFF;
+  + background-color: #6BB9F0;
+  + font-size:105%;
++}

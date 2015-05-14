@@ -3,7 +3,7 @@
 
 <% if current_user and current_user == @user %>
 
-<p>Good to see you again, <%= @user.username %>!</p>
+<p class="flash_notice">Good to see you again, <%= @user.username %>!</p>
 <h3><%= "Your Profile Details" %>
 <p><%= @user.email %></p>
 <p><%= @user.bio %></p>
@@ -32,7 +32,7 @@
 		<p><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
 		<% end %>
 	</div>
-	<div class="line"></div>
+	<!-- <div class="line"></div> -->
 
 	<div class="user_post">
 		<h3><%= @user.username %>'s Posts</h3>

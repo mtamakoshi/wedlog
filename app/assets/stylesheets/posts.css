@@ -77,9 +77,11 @@ table, th, tr, td {
 a{
 	color: #413839;
 	text-decoration: underline;
-}
-a:hover{
 
+}
+
+a:hover{
+	font-size:105%;
 	color: #F9966B;
 }
 

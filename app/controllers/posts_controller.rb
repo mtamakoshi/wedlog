@@ -50,7 +50,7 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
         flash[:notice] = "Your post has been deleted."
         redirect_to posts_path
     else
-      redirect_to '/' 
+     redirect_to '/'
     end
   end
 
