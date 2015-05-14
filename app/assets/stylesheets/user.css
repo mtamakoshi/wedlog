@@ -105,4 +105,11 @@ li.user_post_list{
 	text-decoration: none;
 }
 
-
+p.userinfo{
+	font-size: 25px;
+	text-align: center;
+}
+p.back{
+	font-size: 20px;
+	text-align: center;
+}

@@ -24,7 +24,8 @@
 				<%= f.text_area :comment_body, placeholder: "Enter comment here" %><br>
 			<%= f.submit :class => 'submit' %>
 
-			<br><br><p class="cancel"><%= link_to 'Cancel your comment', posts_path %>
+			<br>
+			<p class="cancel"><%= link_to 'Cancel your comment', posts_path%></p>
 	<% end %>
 	<% else %>
 		<h5><%= link_to 'Login', login_path %> to post or comment.</h5>

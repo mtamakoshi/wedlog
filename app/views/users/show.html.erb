@@ -15,21 +15,21 @@
 <div class="user_page">
 
 	<div class="user_info">
-		<p class="username" ><%= "You are viewing "  + @user.username + "'s" " profile."%></p>
+		<p class="username" style="text-align: center"><%= "You are viewing "  + @user.username + "'s" " profile."%></p>
 		<h3>Name:</h3>
 
-		<p><%= @user.fname  + " " + @user.lname %></p>
+		<p class="userinfo"><%= @user.fname  + " " + @user.lname %></p>
 
 		<h3>Email Address:</h3>
-		<p><%= @user.email %></p>
+		<p class="userinfo"><%= @user.email %></p>
 
 		<h3>Bio:</h3>
 
-		<p><%= @user.bio %></p>
+		<p class="userinfo"><%= @user.bio %></p>
 
 		<h3> City, State/Province, County:</h3>
 
-		<p><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
+		<p class="userinfo"><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
 		<% end %>
 	</div>
 	<!-- <div class="line"></div> -->
@@ -42,7 +42,7 @@
 				<% end %>
 			</ul>
 
-<%= link_to 'Back to Users', users_path %> 
+<p class="back"><%= link_to 'Back to Users', users_path %></p>
 	</div>
 	</div>
 <% end -%>

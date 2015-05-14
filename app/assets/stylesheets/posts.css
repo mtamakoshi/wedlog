@@ -205,18 +205,45 @@ h4{
 	font-size: 18px;
 	margin-left: 30%;
 }
-.submit{
-  width: 15%;
-  height: 40px;
-  margin-left: 42.5%;
-  margin-top: 20px;
-  background-color: rgba(229, 228, 226, 0.7); 
-  border-radius: 50px;
-  font-family: 'badscript';
-  font-size: 18px;
+
+#post_title{
+	width: 40%;
+	height: 35px;
+	font-family: 'badscript';
+	font-size: 18px;
+	margin-left: 30%;
+	margin-bottom: 5%;
 }
 
-
+#post_post_body{
+	width: 40%;
+	height: 55px;
+	font-family: 'badscript';
+	font-size: 18px;
+	margin-left: 30%;
+}
+.submit {
+	width: 15%;
+	height: 40px;
+	margin-left: 42.5%;
+	margin-top: 20px;
+	background-color: rgba(229, 228, 226, 0.7); 
+	border-radius: 50px;
+	font-family: 'badscript';
+	font-size: 18px;
+	}
+.cancel{
+	width: 15%;
+	height: 40px;
+	margin-left: 42.5%;
+	margin-top: 20px;
+	background-color: rgba(229, 228, 226, 0.7); 
+	border-radius: 50px;
+	font-family: 'badscript';
+	font-size: 18px;
+	text-align: center;
+	}
+}
 
 
 
