@@ -83,11 +83,12 @@ a.active{
 }
 
 #slides {
-  margin: auto;
+    margin-top: 5%;
+    margin-left: 13%;
 
     }
 
-    img{
+img{
       border: none;
       border-radius: 10px;
     }
@@ -96,6 +97,17 @@ a.active{
       margin: 0 auto
     }
 
+ h2{
+    color: #FFF5EE;
+    font-size: 30px;
+    margin: 1% auto 0 5%;
+    text-shadow: 2px 2px 2px #D1D0CE;
+/*    margin-top: 10px;*/
+}
+
+main {
+    width: 100%;
+}
 
 /*div.logo{
     margin-top: 70%;

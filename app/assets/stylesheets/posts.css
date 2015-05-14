@@ -16,16 +16,20 @@ h1{
 	color: #848482;
 	text-shadow: 2px 2px #FFFFFF;
 	font-weight: bold;
-
-
 }
 .table{
 	color: #413839;
 	margin-left: 10%;
 }
+table{
+	background-color: rgba(255, 245, 238, 0.4);
+	border: 2px solid #848482;
+	border-radius: 10px;
+}
 
 table, th, tr, td {
-    border: 3px solid #848482;
+	border: 2px solid #848482;
+/*    border: 3px solid #848482;*/
     width: 90%;
 }
 
@@ -63,8 +67,6 @@ table, th, tr, td {
 .post_list_username {
 	font-size: 20px;
 	width: 15%;
-
-
 }
 .post_list_date {
 	font-size: 20px;
@@ -135,11 +137,85 @@ p.login_post{
   font-size: 20px;
 }
 
-
 .edit_field{
 	width: 80%;
 	margin-left: 15%;
 }
+
+h2{
+    color: #FFF5EE;
+    font-size: 30px;
+    margin: 1% auto 0 5%;
+    text-shadow: 2px 2px 2px #D1D0CE;
+}
+
+p.post_title{
+	margin-left: 40%;
+	font-size: 25px;
+}
+
+p.post_body{
+	margin-left: 40%;
+	font-size: 25px;
+}
+
+hr{
+	width: 100%;
+	background-color: rgba(120, 199, 199, 0.7);
+	height: 4px;
+}
+
+.post_area{
+	background-color: rgba(255, 245, 238, 0.4);
+	border: 2px solid #848482;
+	border-radius: 10px;
+}
+
+.edit .cancel{
+	width: 100px;
+	font-size: 18px;
+	margin: 0;
+
+}
+
+.delete{
+	width: 120px;
+	font-size: 18px;
+	margin: 0;
+
+}
+
+.comment{
+	font-size: 20px;
+	text-align: center;
+}
+
+h4{
+	font-size: 20px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#comment_comment_body{
+	width: 40%;
+	height: 55px;
+	font-family: 'badscript';
+	font-size: 18px;
+	margin-left: 30%;
+}
+.submit{
+  width: 15%;
+  height: 40px;
+  margin-left: 42.5%;
+  margin-top: 20px;
+  background-color: rgba(229, 228, 226, 0.7); 
+  border-radius: 50px;
+  font-family: 'badscript';
+  font-size: 18px;
+}
+
+
+
 
 
 

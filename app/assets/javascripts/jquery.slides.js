@@ -2,7 +2,7 @@ $(document).ready(function() {
     slideit(imagesArray);
 });
 
-var imagesArray = ["/assets/engagement2.jpg", "/assets/engagement3.jpg", "/assets/engagement.jpg", "/assets/wedding.jpg", "/assets/wedding2.jpg"];
+var imagesArray = ["/assets/engagement.jpg", "/assets/engagement2.jpg", "/assets/engagement3.jpg", "/assets/engagement4.jpg", "/assets/wedding.jpg", "/assets/wedding2.jpg"];
 
 function slideit(images) {
     var currentImage = $('#slides img').attr('src');

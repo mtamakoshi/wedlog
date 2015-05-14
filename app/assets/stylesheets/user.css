@@ -4,8 +4,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
 .user_page{
 	width: 100%;
 	height: auto;
@@ -16,58 +14,71 @@
 	width: 45%;
 	margin-left: 5%;
 	font-size: 20px;
-
 }
 
 .user_post{
 	float: left;
 	width: 45%;
 	font-size: 20px;
-
 }
 
 .line{
 	position: absolute;
-	top: 70%;
+	top: auto;
 	left: 40%;
 	width: 1%;
 	height: 100%;
 	background-image: url("line.png");
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	background-size: 100%;
 	background-position: center;
 }
-p{
+
+p {
 	font-size: 25px;
 	color: #413839;
 	text-align: left;
 }
 
+h3{
+    color: #413839;
+    font-size: 25px;
+/*    margin: 1% auto 0 5%;*/
+    text-shadow: 2px 2px 2px #D1D0CE;
+/*    margin-top: 10px;*/
+
+}
+
 h2{
-	font-size: 27px;
-	font-weight: bold;
-	color: #413839;
-	text-align: left;
-	text-decoration: underline;
+    color: #FFF5EE;
+    font-size: 30px;
+    margin: 1% auto 0 5%;
+    text-shadow: 2px 2px 2px #D1D0CE;
+/*    margin-top: 10px;*/
 }
 
-ul.member_list {
-	text-align: center;
+ul.member_list{
+	text-decoration: none;
+	width: 70%;
+	margin-left: 15%;
+	background-color: rgba(255, 245, 238, 0.4);
+	border: 2px solid #848482;
+	border-radius: 10px;
 }
-
 
 li.user_list{
 	text-decoration: underline;
 	font-size: 28px;
-	color: black;
 	list-style: none;
+	display: inline-block;
+	padding: 5%;
 
 }
 a:hover{
 	color: #F9966B;
 }
 
-a.active{
+a{
 	color: #413839;
 }
 
@@ -77,6 +88,22 @@ h1{
 	color: #848482;
 	text-shadow: 2px 2px #FFFFFF;
 	font-weight: bold;
-
 }
+.username{
+    color: #413839;
+    font-size: 25px;
+/*    margin: 1% auto 0 5%;*/
+    text-shadow: 2px 2px 2px #D1D0CE;
+}
+
+li.user_post_list{
+	font-size: 25px;
+	text-decoration: none;
+}
+
+
+
+
+
+
 

@@ -115,12 +115,15 @@ p.ppassword label {
 #email {
   width: 45%;
   height: 50px;
-  place
+  font-size: 25px;
+  font-family: 'badscript';
 }
 
 #password {
   width: 45%;
   height: 50px;
+  font-size: 25px;
+  font-family: 'badscript';
 }
 
 

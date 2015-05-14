@@ -79,15 +79,15 @@ header nav li a {
 }
 
 
-main {
+/*main {
     width: 80%; 
-/*    border: 1px solid black ; */
+    border: 1px solid black ; 
     margin-top: 50px;
    margin-left: 10%;
 
-    /*background-color: white;
-/*    border-radius: 12px 12px;*/
-}
+    background-color: white;
+    border-radius: 12px 12px;
+}*/
 
 
 a.active{
@@ -112,6 +112,7 @@ h2{
     color: #FFF5EE;
     font-size: 30px;
     margin: 1% auto 0 5%;
+    text-shadow: 2px 2px 2px #D1D0CE;
 /*    margin-top: 10px;*/
 
 }
@@ -130,10 +131,15 @@ div.img{
 
 }
 
-.flash_notice .flash_alert {
-    font-size: 18px;
-    color: #335078;
-    text-decoration: underline;
+.flash_alert {
+    font-size: 25px;
+    color: #848482;
+    text-shadow: 2px 2px #FFFFFF;
     font-style: italic;
 }
 
+.flash_notice {
+    font-size: 25px;
+    color: #848482;
+    text-shadow: 2px 2px #FFFFFF;
+}
