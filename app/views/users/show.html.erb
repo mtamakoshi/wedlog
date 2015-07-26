@@ -5,7 +5,7 @@
 
 <p class="flash_notice">Good to see you again, <%= @user.username %>!</p>
 <h3><%= "Your Profile Details" %>
-<p><%= @user.email %></p>
+<p class="loginprofile"><%= @user.email %></p>
 <p><%= @user.bio %></p>
 <p><%= @user.city  + ", " + @user.state + ", " + @user.country %></p>
 <p><%= link_to 'Delete Profile', user_path(@user.id), method: :delete, data: {confirm: "Are you sure you wish to delete your profile?"} %></p>
