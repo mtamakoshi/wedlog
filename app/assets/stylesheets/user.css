@@ -4,25 +4,25 @@
   font-weight: normal;
   font-style: normal;
 }
-.user_page{
+.user_page {
 	width: 100%;
 	height: auto;
 
 }
-.user_info{
+.user_info {
 	float: left;
 	width: 45%;
 	margin-left: 5%;
 	font-size: 20px;
 }
 
-.user_post{
+.user_post {
 	float: left;
 	width: 45%;
 	font-size: 20px;
 }
 
-.line{
+.line {
 	position: absolute;
 	top: 70%;
 	left: 40%;
@@ -40,7 +40,7 @@ p {
 	text-align: left;
 }
 
-h3{
+h3 {
 
 	font-size: 25px;
 	text-align: center;
@@ -49,9 +49,7 @@ h3{
 	font-weight: bold;
 }
 
-}
-
-h2{
+h2 {
     color: #FFF5EE;
     font-size: 30px;
     margin: 1% auto 0 5%;
@@ -59,7 +57,7 @@ h2{
 /*    margin-top: 10px;*/
 }
 
-ul.member_list{
+ul.member_list {
 	text-decoration: none;
 	width: 70%;
 	margin-left: 15%;
@@ -68,7 +66,7 @@ ul.member_list{
 	border-radius: 10px;
 }
 
-li.user_list{
+li.user_list {
 	text-decoration: underline;
 	font-size: 28px;
 	list-style: none;
@@ -76,45 +74,44 @@ li.user_list{
 	padding: 5%;
 
 }
-a:hover{
+a:hover {
 	color: #F9966B;
 	font-size:105%;
 }
 
-a{
+a {
 	color: #413839;
 
 }
 
-h1{
+h1 {
 	font-size: 50px;
 	text-align: center;
 	color: #848482;
 	text-shadow: 2px 2px #FFFFFF;
 	font-weight: bold;
 }
-.username{
+.username {
     color: #413839;
     font-size: 25px;
 /*    margin: 1% auto 0 5%;*/
     text-shadow: 2px 2px 2px #D1D0CE;
 }
 
-li.user_post_list{
+li.user_post_list {
 	font-size: 25px;
 	text-decoration: none;
 }
 
-p.userinfo{
+p.userinfo {
 	font-size: 25px;
 	text-align: center;
 }
-p.back{
+p.back {
 	font-size: 20px;
 	text-align: center;
 }
 
-p.loginprofile{
+p.loginprofile {
 
-	r
 }
