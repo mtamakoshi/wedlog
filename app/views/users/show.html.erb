@@ -40,6 +40,11 @@
 				<% @user.posts.each do |post| %>
 					<li class="user_post_list" style="text-decoration: none;"><%= link_to post.title, post %></li>
 				<% end %>
+				<% if @user.posts.each do |post| %>
+				    <%= post.post_body %>
+				    <% end.empty? %>
+		       <p class="userinfo">You have no posts.</p>
+				<% end %>
 			</ul>
 
 <p class="back"><%= link_to 'Back to Users', users_path %></p>
