@@ -1,4 +1,4 @@
-<% content_for :user_login do %>
+<% content_for :use_login do %>
 
 <h1>Please Log in below or Clcik <%= link_to "here", new_user_path %> to Register.</h1>
 
@@ -13,7 +13,7 @@
 	<%= password_field_tag :password %>
 </p>
 <p>
-	<%= submit :Login, class: 'submit' %>
+	<%= submit_tag :Login, class: 'submit' %>
 	
 </p>
 <% end %>

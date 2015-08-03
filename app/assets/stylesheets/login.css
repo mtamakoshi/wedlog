@@ -11,24 +11,30 @@ h1{
   color: #848482;
   text-shadow: 2px 2px #FFFFFF;
   font-weight: bold;
+  margin-left: auto;
 
 
 }
 
 p.cancel {
+  width: 30%;
   text-align: center;
   font-size: 30px;
-  margin: auto;
+  margin: 1% 32%;
+
 
 } 
 
+#new_user {
+  width: 80%;
+  margin: auto
+}
 
 .signup_form{
     border: 3px solid #848482;
     width: 80%;
     height: auto;
-    margin-left: 10%;
-/*    background-color: rgba(255, 245, 238, 0.7);*/
+
     font-family: 'badscript';
 
     
@@ -40,13 +46,12 @@ p.cancel {
     width: 80%;
     height: auto;
     margin-left: 10%;
-/*    background-color: rgba(255, 245, 238, 0.7);*/
     font-family: 'badscript';
 
     
 }
 p{
-  margin-left: 30%;
+  margin-left: 20%;
   color: #413839;
 }
 
@@ -74,7 +79,7 @@ a:hover{
 .submit{
   width: 50%;
   height: 40px;
-  margin-left: 10%;
+  margin-left: 8%;
   margin-top: 20px;
   background-color: rgba(229, 228, 226, 0.7); 
   border-radius: 50px;
@@ -130,4 +135,4 @@ a {
   + color: #FFFFFF;
   + background-color: #6BB9F0;
   + font-size:105%;
-+}
+}
