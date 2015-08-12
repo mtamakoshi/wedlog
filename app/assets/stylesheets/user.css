@@ -9,12 +9,19 @@
 	height: auto;
 
 }
-.user_info .user_post {
-	width: 80%;
-	margin-left: 10%;
+
+.user_info {
+	float: left;
+	width: 45%;
+	margin-left: 5%;
 	font-size: 20px;
 }
 
+.user_post {
+	float: left;
+	width: 45%;
+	font-size: 20px;
+}
 
 .line {
 	position: absolute;
@@ -39,9 +46,8 @@ h3 {
 	text-align: left;
     }
 
-}
 
-h2 { 
+h2 {
     color: #FFF5EE;
     font-size: 30px;
     margin: 1% auto 0 5%;
@@ -89,7 +95,7 @@ h1 {
     text-shadow: 2px 2px 2px #D1D0CE;
 }
 
-li.user_post_list{
+li.user_post_list {
 	font-size: 25px;
 	text-decoration: none;
 }
@@ -105,5 +111,4 @@ p.back {
 
 p.loginprofile {
 
-	
 }

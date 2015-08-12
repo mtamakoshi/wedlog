@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-h1{
+h1 {
   font-size: 40px;
   text-align: center;
   color: #848482;
@@ -30,7 +30,7 @@ p.cancel {
   margin: auto
 }
 
-.signup_form{
+.signup_form {
     border: 3px solid #848482;
     width: 80%;
     height: auto;
@@ -40,8 +40,7 @@ p.cancel {
     
 }
 
-}
-.login_form{
+.login_form {
     border: 3px solid #848482;
     width: 80%;
     height: auto;
@@ -50,33 +49,34 @@ p.cancel {
 
     
 }
-p{
-  margin-left: 20%;
+
+p {
+  margin-left: 30%;
   color: #413839;
 }
 
-a{
+a {
   color: #848482;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   font-size: 105%;
   color: #F9966B;
 }
 
-.submitb{
+.submitb {
   width: 50px;
   height: 30px;
 }
 
-.text_field{
+.text_field {
   width: 70%;
   height: 50px;
   font-size: 28px;
   font-family: 'badscript';
 }
 
-.submit{
+.submit {
   width: 50%;
   height: 40px;
   margin-left: 8%;
@@ -87,7 +87,7 @@ a:hover{
   font-size: 20px;
 }
 
-.pform{
+.pform {
   width: 70%;
   height: 50px;
   font-size: 28px;
@@ -113,9 +113,7 @@ p.ppassword label {
   text-align: center;
   padding-right: 3.5%;
 
-
 }
-
 
 #email {
   width: 45%;
@@ -132,7 +130,7 @@ p.ppassword label {
 }
 
 a {
-  + color: #FFFFFF;
-  + background-color: #6BB9F0;
-  + font-size:105%;
+  color: #FFFFFF;
+  background-color: #6BB9F0;
+  font-size: 105%;
 }

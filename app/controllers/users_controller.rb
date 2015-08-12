@@ -22,7 +22,7 @@ class UsersController < ApplicationController
   	 if @user.save
         session[:user_id] = @user.id
   		 redirect_to user_path(@user), notice: "New account created."
-  	   else
+  	 else
   			flash[:alert] = "There was a problem creating your account, please try again."
         redirect_to new_user_path
     end
