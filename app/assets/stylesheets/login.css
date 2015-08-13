@@ -34,7 +34,6 @@ p.cancel {
     border: 3px solid #848482;
     width: 80%;
     height: auto;
-
     font-family: 'badscript';
 
     
@@ -131,6 +130,5 @@ p.ppassword label {
 
 a {
   color: #FFFFFF;
-  background-color: #6BB9F0;
   font-size: 105%;
 }
