@@ -9,6 +9,7 @@
 	height: auto;
 
 }
+
 .user_info {
 	float: left;
 	width: 45%;
@@ -34,11 +35,6 @@
 	background-position: center;
 }
 
-p {
-	font-size: 25px;
-	color: #413839;
-	text-align: left;
-}
 
 h3 {
 
@@ -47,15 +43,16 @@ h3 {
 	color: #848482;
 	text-shadow: 2px 2px #FFFFFF;
 	font-weight: bold;
-}
+	text-align: left;
+    }
+
 
 h2 {
     color: #FFF5EE;
     font-size: 30px;
     margin: 1% auto 0 5%;
     text-shadow: 2px 2px 2px #D1D0CE;
-/*    margin-top: 10px;*/
-}
+ }
 
 ul.member_list {
 	text-decoration: none;
