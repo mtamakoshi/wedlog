@@ -1,9 +1,5 @@
-@font-face {
-  font-family: 'badscript';
-  src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=Kreon:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 header nav{
 
@@ -11,24 +7,26 @@ header nav{
 }
 
 h1 {
+	font-family: 'Kreon', serif;
+  	font-weight: 700;
 	font-size: 50px;
 	text-align: center;
-	color: #848482;
-	text-shadow: 2px 2px #FFFFFF;
-	font-weight: bold;
+	color: #FFF;
 }
 .table {
+	font-family: 'Kreon', serif;
+  	font-weight: 400;
 	color: #413839;
 	margin-left: 10%;
 }
 table {
-	background-color: rgba(255, 245, 238, 0.4);
-	border: 2px solid #848482;
+	/*background-color: rgba(255, 245, 238, 0.4);*/
+	border: 2px solid #f6f6f3;
 	border-radius: 10px;
 }
 
 table, th, tr, td {
-	border: 2px solid #848482;
+	border: 2px solid #f6f6f3;
 /*    border: 3px solid #848482;*/
     width: 90%;
 }
@@ -76,55 +74,73 @@ table, th, tr, td {
 
 a {
 	color: #413839;
-	text-decoration: underline;
-
 }
 
 a:hover {
-	font-size:105%;
-	color: #F9966B;
+ 	color: #c4c4ff;
 }
 
+.post_list_title a:hover {
+	color: #FFF;
+}
 .table {
 	color: #413839;
 	margin-left: 10%;
 }
 
 p.enter_post {
+	color: #FFF;
+	font-family: 'Kreon', serif;
+  	font-weight: 400;
 	text-align: center;
 	font-size: 30px;
 }
-
+/*.enter_post a {
+	color: #FFF;
+}
+*/
 p.login_post {
-
+	color: #FFF;
+	font-family: 'Kreon', serif;
+  	font-weight: 400;
 	text-align: center;
 	font-size: 30px;
+}
+.login_post a, .enter a {
+	color: #FFF;
+}
 
+.login_post a:hover, .enter a:hover {
+	color: #c4c4ff;
 }
 
 .title_field {
   width: 70%;
   height: 50px;
   font-size: 28px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 .body_field {
   width: 70%;
   height: 80px;
   font-size: 25px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 .title_label_field {
   font-size: 25px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
   padding-right: 9%;
   text-align: center;
 }
 .body_label_field {
   font-size: 25px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
   padding-right: 5%;
   text-align: center;
 }
@@ -135,7 +151,8 @@ p.login_post {
   margin-left: 20% ;
   background-color: rgba(229, 228, 226, 0.7); 
   border-radius: 50px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -201,7 +218,8 @@ h4 {
 #comment_comment_body {
 	width: 40%;
 	height: 55px;
-	font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 	font-size: 18px;
 	margin-left: 30%;
 }
@@ -209,7 +227,8 @@ h4 {
 #post_title {
 	width: 40%;
 	height: 35px;
-	font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 	font-size: 18px;
 	margin-left: 30%;
 	margin-bottom: 5%;
@@ -218,7 +237,8 @@ h4 {
 #post_post_body {
 	width: 40%;
 	height: 55px;
-	font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 	font-size: 18px;
 	margin-left: 30%;
 }
@@ -229,7 +249,8 @@ h4 {
 	margin-top: 20px;
 	background-color: rgba(229, 228, 226, 0.7); 
 	border-radius: 50px;
-	font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 	font-size: 18px;
 	}
 .cancel {
@@ -239,7 +260,8 @@ h4 {
 	margin-top: 20px;
 	background-color: rgba(229, 228, 226, 0.7); 
 	border-radius: 50px;
-	font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 	font-size: 18px;
 	text-align: center;
 	}

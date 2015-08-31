@@ -17,7 +17,7 @@
 				
 <hr>
 <% @post.comments.each do |comment| %>
-	<p class="comment"><%= comment.comment_body %> (<%= comment.user.username %>)</p>
+	<p class="comment"><%= react_component('CommentBox') %> (<%= comment.user.username %>)</p>
 <%end %>
 <hr>
 	<% if current_user %>

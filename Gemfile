@@ -31,7 +31,9 @@ gem 'passenger'
 
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
-  gem 'aws-sdk'
+gem 'aws-sdk'
+
+gem 'react-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

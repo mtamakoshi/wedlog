@@ -4,19 +4,11 @@
     }
 */
 
-
-@font-face {
-  font-family: 'myThirdFont';
-  src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
-  font-weight: normal;
-  font-style: normal;
-} 
-
+@import url("https://fonts.googleapis.com/css?family=Kreon:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 body {
-    font-family: 'myThirdFont';
-    background-image: url("marble.jpg");
-    background-size: 100%;
+    background-image: url("fawn.jpg");
     background-repeat: repeat;
 /*    background-attachment: fixed;
     /*background-color: #DCF4FF ;*/
@@ -30,10 +22,10 @@ header {
     width: 100%;
     height: auto;
     padding: .15em 1em;
-    background-image: url("header3.jpg");
+/*    background-image: url("header3.jpg");
     background-size: 5%;
     background-repeat: repeat;
-
+*/
 }
 
 header ul {
@@ -49,10 +41,10 @@ header ul {
 
 header nav li {
     display: inline;
-    font-family: 'myThirdFont';
+    font-family: 'Kreon', serif;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 30px;
-    font-weight: bold;
-    color: white;
     text-align: center;
     padding-top: 5px;
 
@@ -62,7 +54,7 @@ header nav li {
 header nav li a {
     padding-bottom: 5px;
     display: inline;
-    color: white;
+    color: #FFF;
     text-decoration: none;
     /*background-color: #68D1FF ;*/
     /*border-radius: 6px 6px;*/
@@ -89,14 +81,20 @@ div.logo{
     position:relative;
     margin-left: 70%;
     margin-bottom: 0;
-    background-image: url("logo.jpg");
+/*    background-image: url("logo.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     width: 400px;
-    height: 230px; 
+    height: 230px*/; 
     z-index: -1;
-
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    font-size: 120px;
+    padding: 0;
+    margin: 0;
 }
 
 h2{

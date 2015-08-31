@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Kreon:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
 @font-face {
   font-family: 'badscript';
   src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
@@ -6,10 +9,12 @@
 }
 
 h1 {
+  font-family: 'Kreon', serif;
+  font-weight: 700;
   font-size: 40px;
   text-align: center;
-  color: #848482;
-  text-shadow: 2px 2px #FFFFFF;
+  color: #FFF;
+/*  text-shadow: 2px 2px #FFFFFF;*/
   font-weight: bold;
   margin-left: auto;
 
@@ -17,6 +22,9 @@ h1 {
 }
 
 p.cancel {
+  color: #FFF;
+  font-family: 'Kreon', serif;
+  font-weight: 700;
   width: 30%;
   text-align: center;
   font-size: 30px;
@@ -31,66 +39,79 @@ p.cancel {
 }
 
 .signup_form {
-    border: 3px solid #848482;
+    border-color: #c4c4ff;
+    border-style: double;
+    border-width: 10px; 
     width: 80%;
     height: auto;
-    font-family: 'badscript';
+    font-family: 'Kreon', serif;
+    font-weight: 300;
 
     
 }
 
 .login_form {
-    border: 3px solid #848482;
+    border-color: #c4c4ff;
+    border-style: double;
+    border-width: 10px; 
     width: 80%;
-    height: auto;
-    margin-left: 10%;
-    font-family: 'badscript';
-
+    /*height: auto;*/
+    margin: 50px 6%;
+    padding: 50px;
+    font-family: 'Kreon', serif;
+    font-weight: 300;
     
 }
 
 p {
-  margin-left: 30%;
-  color: #413839;
+  margin-left: 25%;
+  /*color: #413839;*/
 }
 
 a {
-  color: #848482;
+  color: #FFF;
   text-decoration: none;
 }
 a:hover {
-  font-size: 105%;
-  color: #F9966B;
-}
-
-.submitb {
-  width: 50px;
-  height: 30px;
+  color: #c4c4ff;
 }
 
 .text_field {
   width: 70%;
   height: 50px;
   font-size: 28px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 .submit {
-  width: 50%;
-  height: 40px;
+  width: 300px;
+  height: 100px;
   margin-left: 8%;
   margin-top: 20px;
-  background-color: rgba(229, 228, 226, 0.7); 
-  border-radius: 50px;
-  font-family: 'badscript';
+ /* background-color: rgba(229, 228, 226, 0.7); */
+  /*border-radius: 50px;*/
+  font-family: 'Kreon', serif;
+  font-weight: 400;
   font-size: 20px;
 }
+.submitbtn {
+  width: 300px;
+  height: 100px;
+  margin: 10px 40%;
+}
+/*p.submitBtn {
+  width: 200px;
+  height: 70px;
 
+}
+*/
 .pform {
   width: 70%;
   height: 50px;
   font-size: 28px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 
@@ -98,9 +119,11 @@ p.pemail label {
   width: 70%;
   height: 50px;
   font-size: 28px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
   text-align: center;
-  padding-right: 7%;
+  padding-right: 63px;
+  color: #FFF;
 
 }
 
@@ -108,9 +131,11 @@ p.ppassword label {
   width: 70%;
   height: 50px;
   font-size: 28px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
   text-align: center;
-  padding-right: 3.5%;
+  padding-right: 20px;
+  color: #FFF;
 
 }
 
@@ -118,17 +143,18 @@ p.ppassword label {
   width: 45%;
   height: 50px;
   font-size: 25px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 #password {
   width: 45%;
   height: 50px;
   font-size: 25px;
-  font-family: 'badscript';
+  font-family: 'Kreon', serif;
+  font-weight: 300;
 }
 
 a {
-  color: #FFFFFF;
-  font-size: 105%;
+  color: #FFF;
 }
