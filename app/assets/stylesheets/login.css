@@ -10,12 +10,10 @@
 
 h1 {
   font-family: 'Kreon', serif;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 300;
+  font-size: 30px;
   text-align: center;
   color: #FFF;
-/*  text-shadow: 2px 2px #FFFFFF;*/
-  font-weight: bold;
   margin-left: auto;
 
 
@@ -29,34 +27,31 @@ p.cancel {
   text-align: center;
   font-size: 30px;
   margin: 1% 32%;
-
-
 } 
 
-#new_user {
-  width: 80%;
-  margin: auto
-}
-
 .signup_form {
-    border-color: #c4c4ff;
-    border-style: double;
-    border-width: 10px; 
     width: 80%;
     height: auto;
     font-family: 'Kreon', serif;
-    font-weight: 300;
-
-    
+    font-weight: 300;   
 }
 
+#new_user {
+  border-color: #fffdd0;
+  border-style: double;
+  border-width: 10px; 
+  width: 50%;
+  margin: auto
+}
+
+
 .login_form {
-    border-color: #c4c4ff;
+    border-color: #fffdd0;
     border-style: double;
     border-width: 10px; 
-    width: 80%;
+    width: 60%;
     /*height: auto;*/
-    margin: 50px 6%;
+    margin: 50px 20%;
     padding: 50px;
     font-family: 'Kreon', serif;
     font-weight: 300;
@@ -73,28 +68,32 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #c4c4ff;
+  color: #b39eb5;
+  text-shadow:
+   -1px -1px #FFF,
+   1px -1px #FFF,
+   -1px 1px #FFF,
+   1px 1px #FFF;
 }
+
 
 .text_field {
   width: 70%;
-  height: 50px;
-  font-size: 28px;
+  height: 30px;
+  font-size: 20px;
   font-family: 'Kreon', serif;
   font-weight: 300;
 }
 
 .submit {
-  width: 300px;
-  height: 100px;
-  margin-left: 8%;
-  margin-top: 20px;
- /* background-color: rgba(229, 228, 226, 0.7); */
-  /*border-radius: 50px;*/
+  width: 100px;
+  /*height: 100px;*/
+  margin: 20px 30%;
   font-family: 'Kreon', serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 50px;
 }
+
 .submitbtn {
   width: 300px;
   height: 100px;
@@ -118,7 +117,7 @@ a:hover {
 p.pemail label {
   width: 70%;
   height: 50px;
-  font-size: 28px;
+  font-size: 25px;
   font-family: 'Kreon', serif;
   font-weight: 300;
   text-align: center;
@@ -130,18 +129,18 @@ p.pemail label {
 p.ppassword label {
   width: 70%;
   height: 50px;
-  font-size: 28px;
+  font-size: 25px;
   font-family: 'Kreon', serif;
   font-weight: 300;
   text-align: center;
-  padding-right: 20px;
+  padding-right: 22px;
   color: #FFF;
 
 }
 
 #email {
   width: 45%;
-  height: 50px;
+  height: 30px;
   font-size: 25px;
   font-family: 'Kreon', serif;
   font-weight: 300;
@@ -149,7 +148,7 @@ p.ppassword label {
 
 #password {
   width: 45%;
-  height: 50px;
+  height: 30px;
   font-size: 25px;
   font-family: 'Kreon', serif;
   font-weight: 300;

@@ -16,12 +16,11 @@
 
 </head>
 <body>
-<div class="logo" >
+<header>
+  <div class="logo">
   <p class="title">wedlog</p>
 </div>
-<header>
  <nav>
-
   <% if current_user %>
    <h2>Hello <%= current_user.username %></h2>
    <% else %>

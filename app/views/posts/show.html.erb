@@ -1,23 +1,24 @@
 <% content_for :use_posts do %>
 
-<h1>WedLog Posts</h1>
-
 <% if @post.errors.any? %>
 	<% @post.errors.full_message.each do |error| %>
 	<p style="color: red bold;"><% error %></p>
 	<% end%>
 <% end %>
 <div class="post_area">
-	<p class="post_title">Title: <%= @post.title %></h1>
-	<p class="post_body">Post: <%= @post.post_body %></p>
-			<p class="edit"><%= link_to 'Edit your post', edit_post_path %></p>
-			<p class="delete"><%= link_to 'Delete your post', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
+	<p class="post_title">{ <%= @post.title %> }</h1>
+	<p class="post_body"><%= @post.post_body %></p>
+	  <% if current_user %>
+			<p class="edit"><%= link_to 'EDIT', edit_post_path %></p>
+			<p class="delete"><%= link_to 'DELETE', post_path(@post.id), method: :delete, data: {confirm: "Are you sure you wish to delete your post?"} %></p>
+	  <% end %>
 				<!-- <h3><rubytag= time_ago_in_words(post_body.created_at) rubytag></h3> -->
 				
 				
 <hr>
 <% @post.comments.each do |comment| %>
-	<p class="comment"><%= react_component('CommentBox') %> (<%= comment.user.username %>)</p>
+	<p class="comment_body"><%= comment.comment_body %></p>
+	<p class="comment_username">By <%= comment.user.username %></p>
 <%end %>
 <hr>
 	<% if current_user %>
@@ -30,7 +31,7 @@
 			<p class="cancel"><%= link_to 'Cancel your comment', posts_path%></p>
 	<% end %>
 	<% else %>
-		<h5><%= link_to 'Login', login_path %> to post or comment.</h5>
+		<p class="loginMsg"><%= link_to 'Login', login_path %> to post or comment.</p>
 <% end %>
 </div>
 

@@ -15,74 +15,116 @@ h1 {
 }
 .table {
 	font-family: 'Kreon', serif;
-  	font-weight: 400;
+	font-weight: 400;
 	color: #413839;
 	margin-left: 10%;
+	background-color: rgba(255, 245, 238, 0.2);
 }
 table {
 	/*background-color: rgba(255, 245, 238, 0.4);*/
-	border: 2px solid #f6f6f3;
+	border: 3px solid #f6f6f3;
 	border-radius: 10px;
 }
 
 table, th, tr, td {
 	border: 2px solid #f6f6f3;
-/*    border: 3px solid #848482;*/
     width: 90%;
+    padding: 10px;
 }
 
+
 .thead_title {
-	font-size: 30px;
+	font-size: 23px;
 	font-weight: bold;
-	width: 30%
+	width: 30%;
+	text-align: center;
+	color: #917394;
+	text-decoration: none;
+	text-shadow:
+	    -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
 }
 
 .thead_body {
-	font-size: 30px;
+	text-align: center;
+	font-size: 23px;
 	font-weight: bold;
-	width: 40%
+	width: 40%;
+	color: #917394;
+	text-decoration: none;
+	text-shadow:
+	    -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
 }
 .thead_username {
-	font-size: 30px;
+	text-align: center;
+	font-size: 23px;
 	font-weight: bold;
 	width: 15%;
+	color: #917394;
+	text-decoration: none;
+	text-shadow:
+	    -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
 }
 .thead_date {
-	font-size: 30px;
+	text-align: center;
+	font-size: 23px;
 	font-weight: bold;
 	width: 15%;
+	color: #917394;
+	text-decoration: none;
+	text-shadow:
+	    -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
 }
 
 .post_list_title {
 	font-size: 20px;
 	width: 30%;
 }
+
+.post_list_title a {
+	color: #917394;
+	text-decoration: none;
+	text-shadow:
+	    -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
+}
+
+.post_list_title a:hover {
+	color: #aec6cf;
+}
+
 .post_list_body {
-	font-size: 20px;
+	color: #4f4f4f;
+	font-size: 18px;
 	width: 40%;
 
 }
 .post_list_username {
-	font-size: 20px;
+	color: #4f4f4f;
+	font-size: 18px;
 	width: 15%;
 }
 .post_list_date {
-	font-size: 20px;
-	width: 15%;;
+	color: #4f4f4f;
+	font-size: 18px;
+	width: 15%;
 
 }
 
-a {
-	color: #413839;
-}
 
-a:hover {
- 	color: #c4c4ff;
-}
-
-.post_list_title a:hover {
-	color: #FFF;
-}
 .table {
 	color: #413839;
 	margin-left: 10%;
@@ -169,44 +211,75 @@ h2 {
 }
 
 p.post_title {
-	margin-left: 40%;
+	color: #4f4f4f;
+	width: 60%;
+	margin: 20px 20%;
+	text-align: center;
 	font-size: 25px;
+	padding: 10px;
+	border-bottom: 1px solid #fffdd0;
 }
 
+
 p.post_body {
-	margin-left: 40%;
+	color: #4f4f4f;
+	width: 60%;
+	margin: 30px 20%;
 	font-size: 25px;
+	padding: 15px;
+	border-bottom: 1px solid #fffdd0;
 }
 
 hr {
 	width: 100%;
-	background-color: rgba(120, 199, 199, 0.7);
-	height: 4px;
+	color: #fffdd0;
+	height: 1px;
 }
 
 .post_area {
-	background-color: rgba(255, 245, 238, 0.4);
-	border: 2px solid #848482;
-	border-radius: 10px;
+	font-family: 'Kreon', serif;
+	width: 60%;
+	margin: 30px 20%;
+	background-color: rgba(255, 245, 238, 0.2);
+    border-color: #fffdd0;
+    border-style: double;
+    border-width: 10px; 
+    border-radius: 5px;
 }
 
-.edit .cancel {
-	width: 100px;
-	font-size: 18px;
-	margin: 0;
-
+.edit, .delete {
+	width: 50px;
+	margin: 30px auto;
+	float: left;
 }
-
-.delete {
-	width: 120px;
-	font-size: 18px;
-	margin: 0;
-
-}
-
-.comment {
-	font-size: 20px;
+.edit a, .delete a {
+	color: #4f4f4f;
 	text-align: center;
+	width: 100px;
+	border: 1px solid #FFF;
+	background-color: #FFF;
+	border-radius: 10px;
+	padding: 7px;
+	font-size: 13px;
+	font-family: 700;
+	margin: 0;
+	text-decoration: none;
+}
+/*.cancel a {
+
+}
+*/
+.comment_body {
+	width: 60%;
+	margin: 10px 20%;
+	color: #4f4f4f;
+	font-size: 20px;
+}
+.comment_username {
+	width: 60%;
+	margin: 5px 20%;
+	color: #4f4f4f;
+	font-size: 15px;
 }
 
 h4 {
@@ -216,6 +289,7 @@ h4 {
 }
 
 #comment_comment_body {
+	color: #4f4f4f;
 	width: 40%;
 	height: 55px;
     font-family: 'Kreon', serif;
@@ -266,6 +340,21 @@ h4 {
 	text-align: center;
 	}
 
+.loginMsg {
+	color: #4f4f4f;;
+	font-size: 18px;
+}
 
+.loginMsg a {
+	color: #4f4f4f;
+}
 
+.loginMsg a:hover {
+	color: #b39eb5;
+	text-shadow:
+	 -1px -1px #FFF,
+	 1px -1px #FFF,
+	 -1px 1px #FFF,
+	 1px 1px #FFF;
+}
 

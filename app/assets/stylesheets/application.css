@@ -7,16 +7,21 @@
 @import url("https://fonts.googleapis.com/css?family=Kreon:400,300,700");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
 
+
 body {
+    width: 100%;
+    margin: 0;
     background-image: url("fawn.jpg");
-    background-repeat: repeat;
+    background-repeat: repeat !important;
+
 /*    background-attachment: fixed;
     /*background-color: #DCF4FF ;*/
 }
 
-
 header {
-    margin-top: 0px;
+    background-image: url("fawn.png");
+    background-repeat: repeat-x;
+    margin: 0;
     top: 80px;
     left: 0;
     width: 100%;
@@ -54,31 +59,28 @@ header nav li {
 header nav li a {
     padding-bottom: 5px;
     display: inline;
-    color: #FFF;
     text-decoration: none;
-    /*background-color: #68D1FF ;*/
-    /*border-radius: 6px 6px;*/
     margin-left: 5%;
+    color: #b39eb5;
+    text-shadow:
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF ;
 }
 
-
-/*main {
-    width: 80%; 
-    border: 1px solid black ; 
-    margin-top: 50px;
-   margin-left: 10%;
-
-    background-color: white;
-    border-radius: 12px 12px;
-}*/
-
-
-a.active{
-    text-decoration: underline;
-}
+header nav li a:hover {
+    color: #FFF;
+    text-shadow:
+        1px 1px #b39eb5,
+        3px 1px #b39eb5,
+        1px 3px #b39eb5,
+        3px 3px #b39eb5 ;
+ } 
 
 div.logo{
     position:relative;
+    padding-top: 90px;
     margin-left: 70%;
     margin-bottom: 0;
 /*    background-image: url("logo.jpg");
@@ -87,14 +89,20 @@ div.logo{
     background-repeat: no-repeat;
     width: 400px;
     height: 230px*/; 
-    z-index: -1;
+    
 }
 .title {
     font-family: 'Pacifico', cursive;
-    color: #FFF;
-    font-size: 120px;
+    color: #aec6cf;
+    text-shadow:
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
+    font-size: 115px;
     padding: 0;
     margin: 0;
+    z-index: 99;
 }
 
 h2{
@@ -107,18 +115,7 @@ h2{
 }
 
 
-div#slides{
-    width: 70%;
-    height: 600px;
-/*    display: none;*/
-}
 
-
-div.img{
-    width: 900px;
-    height: 800px;
-
-}
 
 .flash_alert {
     font-size: 25px;
