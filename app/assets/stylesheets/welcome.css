@@ -29,16 +29,17 @@ a.active{
 }
 
 #slides {
-    margin: 30px 15%;
-    width: 70%;
+    margin: 30px 10%;
+    width: 80%;
     }
 
-img{
-      width: 80%;
-      margin-left: 10%;
+img.top-image {
+      width: 75%;
+      margin: 20px 12.5%;
       height: 600px;
       border: none;
-      border-radius: 10px;
+      border-radius: 20px;
+      opacity: 0.7;
     }
 
 .container {

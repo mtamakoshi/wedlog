@@ -11,7 +11,7 @@
 body {
     width: 100%;
     margin: 0;
-    background-image: url("fawn.jpg");
+    background-image: url("background.png");
     background-repeat: repeat !important;
 
 /*    background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background-image: url("fawn.png");
+    /*background-image: url("fawn.png");*/
     background-repeat: repeat-x;
     margin: 0;
     top: 80px;
@@ -49,7 +49,7 @@ header nav li {
     font-family: 'Kreon', serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     padding-top: 5px;
 
@@ -70,18 +70,18 @@ header nav li a {
 }
 
 header nav li a:hover {
-    color: #FFF;
+    color: #aec6cf;
     text-shadow:
-        1px 1px #b39eb5,
-        3px 1px #b39eb5,
-        1px 3px #b39eb5,
-        3px 3px #b39eb5 ;
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF ;
  } 
 
 div.logo{
     position:relative;
-    padding-top: 90px;
-    margin-left: 70%;
+    padding-top: 10px;
+    margin-left: 80%;
     margin-bottom: 0;
 /*    background-image: url("logo.jpg");
     background-size: 100%;
@@ -99,7 +99,7 @@ div.logo{
         1px -1px #FFF,
         -1px 1px #FFF,
         1px 1px #FFF;
-    font-size: 115px;
+    font-size: 60px;
     padding: 0;
     margin: 0;
     z-index: 99;
@@ -115,17 +115,17 @@ h2{
 }
 
 
-
-
 .flash_alert {
-    font-size: 25px;
-    color: #848482;
-    text-shadow: 2px 2px #FFFFFF;
+    font-size: 16px;
+    color: #ffc0b4;
+    font-family: 'Kreon', serif;
     font-style: italic;
+    padding: 10px;
 }
 
 .flash_notice {
-    font-size: 25px;
-    color: #848482;
-    text-shadow: 2px 2px #FFFFFF;
+    font-size: 16px;
+    color: #b39eb5;
+    font-family: 'Kreon', serif;
+    padding: 10px;
 }

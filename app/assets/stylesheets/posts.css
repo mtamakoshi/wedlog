@@ -16,29 +16,34 @@ h1 {
 .table {
 	font-family: 'Kreon', serif;
 	font-weight: 400;
-	color: #413839;
-	margin-left: 10%;
-	background-color: rgba(255, 245, 238, 0.2);
-}
+	color: #605658;
+/*	width: 90%;
+	margin-left: 5%;
+	background-color: rgba(240, 237, 243, 0.7);
+*/}
 table {
 	/*background-color: rgba(255, 245, 238, 0.4);*/
-	border: 3px solid #f6f6f3;
+	/*border: 3px solid #f6f6f3;*/
+	width: 90%;
+	margin-left: 5%;
+	background-color: rgba(240, 237, 243, 0.7);
+
 	border-radius: 10px;
 }
 
 table, th, tr, td {
-	border: 2px solid #f6f6f3;
-    width: 90%;
+	/*border: 2px solid #f6f6f3;*/
+    /*width: 90%;*/
     padding: 10px;
 }
 
 
 .thead_title {
-	font-size: 23px;
+	font-size: 18px;
 	font-weight: bold;
 	width: 30%;
-	text-align: center;
-	color: #917394;
+	text-align: left;
+	color: #aec6cf;
 	text-decoration: none;
 	text-shadow:
 	    -1px -1px #FFF,
@@ -48,11 +53,11 @@ table, th, tr, td {
 }
 
 .thead_body {
-	text-align: center;
-	font-size: 23px;
+	text-align: left;
+	font-size: 18px;
 	font-weight: bold;
 	width: 40%;
-	color: #917394;
+	color: #aec6cf;
 	text-decoration: none;
 	text-shadow:
 	    -1px -1px #FFF,
@@ -61,11 +66,11 @@ table, th, tr, td {
         1px 1px #FFF;
 }
 .thead_username {
-	text-align: center;
-	font-size: 23px;
+	text-align: left;
+	font-size: 18px;
 	font-weight: bold;
 	width: 15%;
-	color: #917394;
+	color: #aec6cf;
 	text-decoration: none;
 	text-shadow:
 	    -1px -1px #FFF,
@@ -74,11 +79,11 @@ table, th, tr, td {
         1px 1px #FFF;
 }
 .thead_date {
-	text-align: center;
-	font-size: 23px;
+	text-align: left;
+	font-size: 18px;
 	font-weight: bold;
 	width: 15%;
-	color: #917394;
+	color: #aec6cf;
 	text-decoration: none;
 	text-shadow:
 	    -1px -1px #FFF,
@@ -88,18 +93,18 @@ table, th, tr, td {
 }
 
 .post_list_title {
-	font-size: 20px;
+	font-size: 18px;
 	width: 30%;
 }
 
 .post_list_title a {
 	color: #917394;
 	text-decoration: none;
-	text-shadow:
+/*	text-shadow:
 	    -1px -1px #FFF,
         1px -1px #FFF,
         -1px 1px #FFF,
-        1px 1px #FFF;
+        1px 1px #FFF;*/
 }
 
 .post_list_title a:hover {
@@ -108,18 +113,18 @@ table, th, tr, td {
 
 .post_list_body {
 	color: #4f4f4f;
-	font-size: 18px;
+	font-size: 15px;
 	width: 40%;
 
 }
 .post_list_username {
 	color: #4f4f4f;
-	font-size: 18px;
+	font-size: 15px;
 	width: 15%;
 }
 .post_list_date {
 	color: #4f4f4f;
-	font-size: 18px;
+	font-size: 15px;
 	width: 15%;
 
 }
@@ -135,25 +140,26 @@ p.enter_post {
 	font-family: 'Kreon', serif;
   	font-weight: 400;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 /*.enter_post a {
 	color: #FFF;
 }
 */
 p.login_post {
-	color: #FFF;
+	color: #aec6cf;
 	font-family: 'Kreon', serif;
   	font-weight: 400;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 }
 .login_post a, .enter a {
-	color: #FFF;
+	color: #aec6cf;
+	text-decoration: none;
 }
 
 .login_post a:hover, .enter a:hover {
-	color: #c4c4ff;
+	color: #b39eb5;
 }
 
 .title_field {
@@ -211,23 +217,23 @@ h2 {
 }
 
 p.post_title {
-	color: #4f4f4f;
+	color: #605658;
 	width: 60%;
 	margin: 20px 20%;
 	text-align: center;
 	font-size: 25px;
 	padding: 10px;
-	border-bottom: 1px solid #fffdd0;
+	/*border-bottom: 1px solid #fffdd0;*/
 }
 
 
 p.post_body {
-	color: #4f4f4f;
+	color: #605658;
 	width: 60%;
 	margin: 30px 20%;
-	font-size: 25px;
+	font-size: 18px;
 	padding: 15px;
-	border-bottom: 1px solid #fffdd0;
+	/*border-bottom: 1px solid #fffdd0;*/
 }
 
 hr {
@@ -240,11 +246,10 @@ hr {
 	font-family: 'Kreon', serif;
 	width: 60%;
 	margin: 30px 20%;
-	background-color: rgba(255, 245, 238, 0.2);
-    border-color: #fffdd0;
-    border-style: double;
+	padding: 30px;
+	background-color: rgba(240, 237, 243, 0.7);
     border-width: 10px; 
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .edit, .delete {
@@ -272,14 +277,18 @@ hr {
 .comment_body {
 	width: 60%;
 	margin: 10px 20%;
-	color: #4f4f4f;
-	font-size: 20px;
+	padding: 5px;
+	color: #605658;
+	font-size: 15px;
+	border-top: 2px solid #FFF;
 }
 .comment_username {
 	width: 60%;
 	margin: 5px 20%;
-	color: #4f4f4f;
-	font-size: 15px;
+	padding: 5px;
+	color: #605658;
+	font-size: 12px;
+	border-bottom: 2px solid #FFF;
 }
 
 h4 {
@@ -341,20 +350,21 @@ h4 {
 	}
 
 .loginMsg {
-	color: #4f4f4f;;
+	color: #aec6cf;
 	font-size: 18px;
 }
 
 .loginMsg a {
-	color: #4f4f4f;
+	color: #aec6cf;
+	text-decoration: none;
 }
 
 .loginMsg a:hover {
 	color: #b39eb5;
-	text-shadow:
+	/*text-shadow:
 	 -1px -1px #FFF,
 	 1px -1px #FFF,
 	 -1px 1px #FFF,
-	 1px 1px #FFF;
+	 1px 1px #FFF;*/
 }
 

@@ -15,12 +15,12 @@
 				<!-- <h3><rubytag= time_ago_in_words(post_body.created_at) rubytag></h3> -->
 				
 				
-<hr>
+
 <% @post.comments.each do |comment| %>
 	<p class="comment_body"><%= comment.comment_body %></p>
 	<p class="comment_username">By <%= comment.user.username %></p>
 <%end %>
-<hr>
+
 	<% if current_user %>
 		<h4>Post a comment below:</h4>
 				<%= form_for [@post, @comment] do |f| %>

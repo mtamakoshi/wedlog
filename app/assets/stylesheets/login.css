@@ -11,9 +11,9 @@
 h1 {
   font-family: 'Kreon', serif;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
-  color: #FFF;
+  color: #8eafbc;
   margin-left: auto;
 
 
@@ -37,18 +37,18 @@ p.cancel {
 }
 
 #new_user {
-  border-color: #fffdd0;
+/*  border-color: #fffdd0;
   border-style: double;
-  border-width: 10px; 
+  border-width: 10px; */
   width: 50%;
   margin: auto
 }
 
 
 .login_form {
-    border-color: #fffdd0;
+/*    border-color: #fffdd0;
     border-style: double;
-    border-width: 10px; 
+    border-width: 10px; */
     width: 60%;
     /*height: auto;*/
     margin: 50px 20%;
@@ -64,16 +64,16 @@ p {
 }
 
 a {
-  color: #FFF;
+  color: #cfaec6;
   text-decoration: none;
 }
 a:hover {
   color: #b39eb5;
-  text-shadow:
+/*  text-shadow:
    -1px -1px #FFF,
    1px -1px #FFF,
    -1px 1px #FFF,
-   1px 1px #FFF;
+   1px 1px #FFF;*/
 }
 
 
@@ -87,17 +87,27 @@ a:hover {
 
 .submit {
   width: 100px;
-  /*height: 100px;*/
-  margin: 20px 30%;
+  height: 25px;
+  margin: 10px 30%;
   font-family: 'Kreon', serif;
-  font-weight: 400;
-  font-size: 50px;
+  color: #605658;
+  background-color: #f1eae1;
+  border: none;
+  border-radius: 5px;
 }
 
 .submitbtn {
-  width: 300px;
-  height: 100px;
-  margin: 10px 40%;
+  width: 100px;
+  height: 25px;
+  margin: 10px 45%;
+  font-family: 'Kreon', serif;
+  color: #605658;
+  background-color: #f1eae1;
+  border: none;
+  border-radius: 5px;
+}
+.submitbtn:hover {
+  background-color: #e9ded0;
 }
 /*p.submitBtn {
   width: 200px;
@@ -117,43 +127,45 @@ a:hover {
 p.pemail label {
   width: 70%;
   height: 50px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Kreon', serif;
   font-weight: 300;
   text-align: center;
-  padding-right: 63px;
-  color: #FFF;
+  padding-right: 55px;
+  color: #aec6cf;
 
 }
 
 p.ppassword label {
   width: 70%;
   height: 50px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Kreon', serif;
   font-weight: 300;
   text-align: center;
   padding-right: 22px;
-  color: #FFF;
+  color: #aec6cf;
 
 }
 
 #email {
   width: 45%;
   height: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Kreon', serif;
   font-weight: 300;
+  color: #605658;
 }
 
 #password {
   width: 45%;
   height: 30px;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Kreon', serif;
   font-weight: 300;
+  color: #605658;
 }
 
 a {
-  color: #FFF;
+  color: #aec6cf;
 }
