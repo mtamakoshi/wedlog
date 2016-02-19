@@ -11,7 +11,7 @@
 body {
     width: 100%;
     margin: 0;
-    background-image: url("background.png");
+    background-image: url("backImg.png");
     background-repeat: repeat !important;
 
 /*    background-attachment: fixed;
