@@ -4,36 +4,33 @@
     }
 */
 
-
-@font-face {
-  font-family: 'myThirdFont';
-  src: url('badscript.eot?#iefix') format('embedded-opentype'),  url('badscript.woff') format('woff'), url('badscript.ttf')  format('truetype'), url('badscript.svg#badscript') format('svg');
-  font-weight: normal;
-  font-style: normal;
-} 
+@import url("https://fonts.googleapis.com/css?family=Kreon:400,300,700");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 
 
 body {
-    font-family: 'myThirdFont';
-    background-image: url("marble.jpg");
-    background-size: 100%;
-    background-repeat: repeat;
+    width: 100%;
+    margin: 0;
+    background-image: url("backImg.png");
+    background-repeat: repeat !important;
+
 /*    background-attachment: fixed;
     /*background-color: #DCF4FF ;*/
 }
 
-
 header {
-    margin-top: 0px;
+    /*background-image: url("fawn.png");*/
+    background-repeat: repeat-x;
+    margin: 0;
     top: 80px;
     left: 0;
     width: 100%;
     height: auto;
     padding: .15em 1em;
-    background-image: url("header3.jpg");
+/*    background-image: url("header3.jpg");
     background-size: 5%;
     background-repeat: repeat;
-
+*/
 }
 
 header ul {
@@ -49,10 +46,10 @@ header ul {
 
 header nav li {
     display: inline;
-    font-family: 'myThirdFont';
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
+    font-family: 'Kreon', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
     text-align: center;
     padding-top: 5px;
 
@@ -62,41 +59,50 @@ header nav li {
 header nav li a {
     padding-bottom: 5px;
     display: inline;
-    color: white;
     text-decoration: none;
-    /*background-color: #68D1FF ;*/
-    /*border-radius: 6px 6px;*/
     margin-left: 5%;
+    color: #b39eb5;
+    text-shadow:
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF ;
 }
 
-
-/*main {
-    width: 80%; 
-    border: 1px solid black ; 
-    margin-top: 50px;
-   margin-left: 10%;
-
-    background-color: white;
-    border-radius: 12px 12px;
-}*/
-
-
-a.active{
-    text-decoration: underline;
-}
+header nav li a:hover {
+    color: #aec6cf;
+    text-shadow:
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF ;
+ } 
 
 div.logo{
     position:relative;
-    margin-left: 70%;
+    padding-top: 10px;
+    margin-left: 80%;
     margin-bottom: 0;
-    background-image: url("logo.jpg");
+/*    background-image: url("logo.jpg");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
     width: 400px;
-    height: 230px; 
-    z-index: -1;
-
+    height: 230px*/; 
+    
+}
+.title {
+    font-family: 'Pacifico', cursive;
+    color: #aec6cf;
+    text-shadow:
+        -1px -1px #FFF,
+        1px -1px #FFF,
+        -1px 1px #FFF,
+        1px 1px #FFF;
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
 }
 
 h2{
@@ -109,28 +115,17 @@ h2{
 }
 
 
-div#slides{
-    width: 70%;
-    height: 600px;
-/*    display: none;*/
-}
-
-
-div.img{
-    width: 900px;
-    height: 800px;
-
-}
-
 .flash_alert {
-    font-size: 25px;
-    color: #848482;
-    text-shadow: 2px 2px #FFFFFF;
+    font-size: 16px;
+    color: #ffc0b4;
+    font-family: 'Kreon', serif;
     font-style: italic;
+    padding: 10px;
 }
 
 .flash_notice {
-    font-size: 25px;
-    color: #848482;
-    text-shadow: 2px 2px #FFFFFF;
+    font-size: 16px;
+    color: #b39eb5;
+    font-family: 'Kreon', serif;
+    padding: 10px;
 }
