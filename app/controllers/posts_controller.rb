@@ -29,6 +29,8 @@ before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   def create
     @post = Post.create(post_params)
+    #or 
+    #@post = Post.create(:post_body: params[:post][:post_body], session[:user_id])
     flash[:notice] = "Your post was created. Thank you for sharing."
     redirect_to posts_path 
   end

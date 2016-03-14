@@ -1,13 +1,4 @@
-<% content_for :use_login do %>
 
-	<% if @user.errors.full_messages.any? %>
-
-		<ul>
-			<% @user.errors.full_messages.each do |error| %>
-			<li style="color: #E55451;"><%= error %></li>
-			<% end %>
-		</ul>
-	<% end %>
 
 
 	<div id="signup_form">
@@ -50,5 +41,3 @@
 			<p><%= f.submit :class => 'submit', :value => 'Sign Up' %></p>	
 		<% end %>
 	</div>
-
-<% end -%>
