@@ -17,5 +17,7 @@ class User < ActiveRecord::Base
   def self.find_by_username(username)
       User.where("lower(username) = ?", username.downcase).first
   end
+
+  has_many :conversations, foreign_key: :sender_id
   
 end
