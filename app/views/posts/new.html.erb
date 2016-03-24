@@ -1,28 +1,13 @@
 <% content_for :use_posts do %>
 <h1>Wed Log Posts!</h1>
 
-<% if @post.errors.any? %>
-	<% @post.errors.full_message.each do |error| %>
-	<p style="color: red bold;"><% error %></p>
-	<% end%>
-<% end %>
+<%= render 'errors' %>
 
 <h1><%= @post.title %></h1>
 <p><% @post.post_body %></p>
 <hr>
-<% if current_user %>
-	<h4>Enter and submit a post below:</h4>
-		<%= form_for @post do |f| %>
-			<%= f.text_field :title, placeholder: "Enter post title" %><br>
-			<%= f.text_area :post_body, placeholder: "Enter post body" %><br>
-			<%= f.submit :class => 'submit'%>
-			<br>
-			<p class="cancel"><%= link_to 'Cancel your post', posts_path %></p>
-			
-		<% end %>
-<% else %>
-	<h5><%= link_to 'Login', login_path %> to comment.</h5>
-<% end %>
+
+<%= render 'form' %>
 
 <% end %>
 

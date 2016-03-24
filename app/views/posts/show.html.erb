@@ -1,10 +1,7 @@
 <% content_for :use_posts do %>
 
-<% if @post.errors.any? %>
-	<% @post.errors.full_message.each do |error| %>
-	<p style="color: red bold;"><% error %></p>
-	<% end%>
-<% end %>
+<%= render 'errors' %>
+
 <div class="post_area">
 	<p class="post_title">{ <%= @post.title %> }</h1>
 	<p class="post_body"><%= @post.post_body %></p>
