@@ -12,8 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require chat
 //= require private_pub
+//= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){

@@ -1,25 +1,8 @@
 == README
 
 
-* Ruby version
-* ruby 2.2.3p173 (2015-08-18 revision 51636)
+A Blog made to share wedding related  thoughts, issues, tips and ideas.
 
-* System dependencies
+Built with Rails, Paperclip for photo sharing, Passenger and AWS-SDK gems (for deployment to AWS EC2).
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+The blog also features a G-mail like chat for users to communicate real time.
