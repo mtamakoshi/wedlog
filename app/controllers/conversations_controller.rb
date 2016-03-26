@@ -14,7 +14,7 @@ class ConversationsController < ApplicationController
 
   def show
     @conversation = Conversation.find(params[:id])
-    @reciever = chatters(@conversation)
+    @reciever = interlocutor(@conversation)
     @messages = @conversation.messages
     @message = Message.new
   end
@@ -25,7 +25,7 @@ class ConversationsController < ApplicationController
     params.require(:conversation).permit(:sender_id, :recipient_id)
   end
 
-  def chatters(conversation)
+  def interlocutor(conversation)
     current_user == conversation.recipient ? conversation.sender : conversation.recipient
   end
 

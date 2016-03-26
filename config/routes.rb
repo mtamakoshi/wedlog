@@ -3,20 +3,20 @@ Rails.application.routes.draw do
 
   get '/welcome/loggedout', to: 'welcome#loggedout', as: 'loggedout'
   get '/welcome/about', to: 'welcome#about', as: 'about'
-
-  root 'welcome#index', as: 'welcome'
-
-
   get '/login', to:'sessions#new'
-
   post '/login', to: 'sessions#create'
-
   delete '/logout', to: 'sessions#delete'
 
   resources :users
   resources :posts do
     resources :comments, shallow: true, only: [:create, :destroy]
   end
+
+  resources :conversations do
+    resources :messages
+  end
+
+  root 'welcome#index', as: 'welcome'
 
 
     # except: [:new, :show, :index, :edit, :update] its easier to write the only rather than except

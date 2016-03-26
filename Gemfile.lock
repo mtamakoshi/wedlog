@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: 25be0b25d67923e28419c6146e8f8307741a974b
+  revision: 9bdc0a00bfb43c9afef7e992a0cf7f55d93a5c27
   specs:
     paperclip (5.0.0.beta1)
       activemodel (>= 4.2.0)
@@ -49,12 +49,12 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (6.0.3)
-    aws-sdk (2.2.29)
-      aws-sdk-resources (= 2.2.29)
-    aws-sdk-core (2.2.29)
+    aws-sdk (2.2.30)
+      aws-sdk-resources (= 2.2.30)
+    aws-sdk-core (2.2.30)
       jmespath (~> 1.0)
-    aws-sdk-resources (2.2.29)
-      aws-sdk-core (= 2.2.29)
+    aws-sdk-resources (2.2.30)
+      aws-sdk-core (= 2.2.30)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)

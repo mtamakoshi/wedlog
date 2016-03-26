@@ -1,6 +1,9 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'yaml'
+#must add this require or get this error
+# private_pub.rb:21:in `load_config': uninitialized constant YAML (NameError)
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

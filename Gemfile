@@ -35,8 +35,12 @@ gem 'aws-sdk'
 
 gem 'react-rails'
 
-gem "private_pub"
-gem "thin"
+gem 'private_pub'
+gem 'thin'
+
+# Notes on private_pub and thin gems
+# To start up that Rack server by running this command on a separate terminal
+# rackup private_pub.ru -s thin -E production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

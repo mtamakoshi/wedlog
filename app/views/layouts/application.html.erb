@@ -8,7 +8,7 @@
   <%= stylesheet_link_tag 'login', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_login) %>
   <%= stylesheet_link_tag 'posts', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_posts) %>
   <%= stylesheet_link_tag 'user', media: 'all', 'data-turbolinks-track' => true if content_for?(:use_user) %>
-
+  <meta content='<%= user_signed_in? ? current_user.id : "" %>' name='user-id'/>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <!-- <link rel="stylesheet" type="text/css" href="/application.css"> -->
